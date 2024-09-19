@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/ic_bookmark_blue" android:enabled="true">
+        <intent android:targetPackage="com.instantbits.cast.webvideo" android:action="android.intent.action.VIEW" android:targetClass="com.instantbits.cast.webvideo.bookmarks.BookmarksActivity" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_local_videos_blue" android:enabled="true">
+        <intent android:targetPackage="com.instantbits.cast.webvideo" android:action="android.intent.action.VIEW" android:targetClass="com.instantbits.cast.webvideo.local.LocalActivity" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_star_blue_24dp" android:enabled="true">
+        <intent android:targetPackage="com.instantbits.cast.webvideo" android:action="android.intent.action.VIEW" android:targetClass="com.instantbits.cast.webvideo.mostvisited.MostVisitedActivity" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_tv_blue_24dp" android:enabled="true">
+        <intent android:targetPackage="com.instantbits.cast.webvideo" android:action="android.intent.action.VIEW" android:targetClass="com.instantbits.cast.webvideo.iptv.IPTVListsActivity" />
+    </shortcut>
+</shortcuts>

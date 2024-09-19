@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">הגדרות</string>
+    <string name="add_dialog_button">הוסף</string>
+    <string name="button_label_add">הוסף</string>
+    <string name="button_label_cast">התחבר</string>
+    <string name="change_video_name_hint">שם</string>
+    <string name="connect_dialog_connect_button">התחבר</string>
+    <string name="edit_context_menu_item">ערוך</string>
+    <string name="exit">יציאה</string>
+    <string name="gdpr_dialog_implete_error_title">שגיאה</string>
+    <string name="generic_error_dialog_title">שגיאה</string>
+    <string name="http_auth_password">סיסמא</string>
+    <string name="http_auth_username">שם משתמש</string>
+    <string name="local_activity_tab_explorer">סייר</string>
+    <string name="name_label">שם</string>
+    <string name="nav_title_beta">בטא</string>
+    <string name="nav_title_settings">הגדרות</string>
+    <string name="open_settings">הגדרות</string>
+    <string name="password_input_title">סיסמא</string>
+    <string name="please_wait_progress_dialog_title">אנא המתן</string>
+    <string name="remove_context_menu_item">הסר</string>
+    <string name="remove_item">הסר</string>
+    <string name="remove_queue_item">הסר</string>
+    <string name="samsung_toolbar_error_title">שגיאה</string>
+    <string name="sort_by_name_title">שם</string>
+    <string name="sort_by_title">מיין לפי:</string>
+    <string name="subtitle_video_name_hint">שם</string>
+    <string name="subtitles_progress_dialog_generic_content">אנא המתן</string>
+    <string name="subtitles_progress_dialog_generic_title">אנא המתן</string>
+    <string name="username_input_password">שם משתמש</string>
+    <string name="what_is_premium_dialog_button">מה זה premium?</string>
+    <string name="what_is_premium_menu_button">מה זה premium?</string>
+</resources>

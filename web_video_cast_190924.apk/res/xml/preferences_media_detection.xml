@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference android:icon="@null" android:title="@string/clear_videos_on_location_change_title" android:key="@string/pref_key_clear_videos_on_location_change" android:summary="@string/clear_videos_on_location_change_summary" android:defaultValue="true" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+    <CheckBoxPreference android:icon="@null" android:title="@string/video_detection_2_title" android:key="@string/pref_enable_inject" android:summary="@string/video_detection_2_summary" android:defaultValue="true" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+    <CheckBoxPreference android:icon="@null" android:title="@string/auto_video_list_title" android:key="@string/pref_enable_auto_video_list" android:summary="@string/auto_video_list_summary" android:defaultValue="true" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+    <CheckBoxPreference android:icon="@null" android:title="@string/hide_m3u8_no_audio_pref_title" android:key="@string/pref_hide_m3u8_no_audio" android:summary="@string/hide_m3u8_no_audio_pref_summary" android:defaultValue="true" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+    <CheckBoxPreference android:icon="@null" android:title="@string/check_live_stream_pref_title" android:key="@string/pref_check_live_stream" android:summary="@string/check_live_stream_pref_summary" android:defaultValue="true" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+</PreferenceScreen>

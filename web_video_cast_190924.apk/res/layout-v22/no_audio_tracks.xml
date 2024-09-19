@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textview.MaterialTextView android:id="@id/audioTrackErrorLine1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/audio_tracks_not_found" style="@style/audio_track_text_not_bold" />
+    <com.google.android.material.textview.MaterialTextView android:textSize="20.0sp" android:textColor="@color/white_87_percent" android:layout_marginTop="24.0dip" android:text="@string/audio_tracks_which_devices" android:fontFamily="@string/font_family_medium" android:lineHeight="24.0dip" lineHeight="24.0dip" style="@style/audio_track_text_not_bold" />
+    <com.google.android.material.textview.MaterialTextView android:text="MP4/MKV:" lineHeight="26.0dip" style="@style/audio_tracks_file_type" />
+    <com.google.android.material.textview.MaterialTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/audio_track_mp4_android" style="@style/audio_track_text_not_bold" />
+    <com.google.android.material.textview.MaterialTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/audio_track_mp4_dlna_lg" style="@style/audio_track_text_not_bold" />
+    <com.google.android.material.textview.MaterialTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/audio_track_mp4_dlna_samsung" style="@style/audio_track_text_not_bold" />
+    <com.google.android.material.textview.MaterialTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/audio_track_mp4_dlna_other" style="@style/audio_track_text_not_bold" />
+    <com.google.android.material.textview.MaterialTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/audio_track_mp4_firetv_receiver" style="@style/audio_track_text_not_bold" />
+    <com.google.android.material.textview.MaterialTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/audio_track_mp4_roku_2" style="@style/audio_track_text_not_bold" />
+    <com.google.android.material.textview.MaterialTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="M3U8 (HLS):" style="@style/audio_tracks_file_type" />
+    <com.google.android.material.textview.MaterialTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/audio_track_hls_android_apple" style="@style/audio_track_text_not_bold" />
+    <com.google.android.material.textview.MaterialTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/audio_track_hls_receiver_other" style="@style/audio_track_text_not_bold" />
+    <com.google.android.material.textview.MaterialTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/audio_track_hls_google_cast" style="@style/audio_track_text_not_bold" />
+    <com.google.android.material.textview.MaterialTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/audio_track_mp4_firetv_receiver" style="@style/audio_track_text_not_bold" />
+    <com.google.android.material.textview.MaterialTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/audio_track_mp4_roku_2" style="@style/audio_track_text_not_bold" />
+</LinearLayout>

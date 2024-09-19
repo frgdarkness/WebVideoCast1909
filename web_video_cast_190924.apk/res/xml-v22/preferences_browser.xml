@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference android:icon="@null" android:title="@string/browser_ads_pref_category" android:iconSpaceReserved="false" app:fragment="com.instantbits.cast.webvideo.settings.SettingsBrowserPopupAndAdBlockingFragment" app:iconSpaceReserved="false" />
+    <Preference android:icon="@null" android:title="@string/browsing_pref_category" android:iconSpaceReserved="false" app:fragment="com.instantbits.cast.webvideo.settings.SettingsBrowserBrowsingFragment" app:iconSpaceReserved="false" />
+    <Preference android:icon="@null" android:title="@string/browser_controls_pref_category" android:iconSpaceReserved="false" app:fragment="com.instantbits.cast.webvideo.settings.SettingsBrowserControlsFragment" app:iconSpaceReserved="false" />
+    <Preference android:icon="@null" android:title="@string/browser_advanced_pref_category" android:iconSpaceReserved="false" app:fragment="com.instantbits.cast.webvideo.settings.SettingsBrowserAdvancedFragment" app:iconSpaceReserved="false" />
+</PreferenceScreen>

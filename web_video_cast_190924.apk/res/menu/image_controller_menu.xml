@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/next_previous_via_swipe" android:title="@string/image_controller_gesture_next_previous_via_swipe_settings_title" android:checkable="true" />
+</menu>

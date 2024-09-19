@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/relativeLayout" android:background="@color/native_ad_background" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="108.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/native_privacy_information_icon_image" android:background="@null" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="2.0dip" android:scaleType="fitXY" android:contentDescription="native_privacy_information_icon_image" app:layout_constraintRight_toLeftOf="@id/native_ad_ad_label" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="8.0dip" android:textColor="@color/secondary_text" android:gravity="center" android:id="@id/native_ad_ad_label" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="Ad" app:layout_constraintBottom_toBottomOf="@id/native_privacy_information_icon_image" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/native_privacy_information_icon_image" />
+    <include layout="@layout/list_native_ad_layout_base" />
+</androidx.constraintlayout.widget.ConstraintLayout>

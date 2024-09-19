@@ -1,0 +1,60 @@
+.class public Lix;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements LXo;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Landroid/content/Context;LWo$a;)LWo;
+    .locals 3
+
+    const-string v0, "android.permission.ACCESS_NETWORK_STATE"
+
+    invoke-static {p1, v0}, LWp;->checkSelfPermission(Landroid/content/Context;Ljava/lang/String;)I
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    const-string v1, "ConnectivityMonitor"
+
+    const/4 v2, 0x3
+
+    invoke-static {v1, v2}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+
+    if-eqz v0, :cond_1
+
+    new-instance v0, Lhx;
+
+    invoke-direct {v0, p1, p2}, Lhx;-><init>(Landroid/content/Context;LWo$a;)V
+
+    goto :goto_1
+
+    :cond_1
+    new-instance v0, LKo0;
+
+    invoke-direct {v0}, LKo0;-><init>()V
+
+    :goto_1
+    return-object v0
+.end method

@@ -1,0 +1,226 @@
+version: 2.9.3
+apkFileName: Web_Video_Cast_5.10.8_1909.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 21
+  targetSdkVersion: 34
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 4934
+  versionName: 5.10.8
+resourcesAreCompressed: false
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  DebugProbesKt.bin: 8
+  VERSION.txt: 8
+  androidsupportmultidexversion.txt: 0
+  app-update-ktx.properties: 8
+  app-update.properties: 8
+  billing-ktx.properties: 8
+  billing.properties: 8
+  byte_string_store.proto: 8
+  client_analytics.proto: 8
+  core-common.properties: 8
+  firebase-analytics.properties: 8
+  firebase-annotations.properties: 8
+  firebase-encoders-proto.properties: 8
+  firebase-encoders.properties: 8
+  firebase-measurement-connector.properties: 8
+  jetty-dir.css: 8
+  kotlin-tooling-metadata.json: 8
+  play-services-ads-base.properties: 8
+  play-services-ads-identifier.properties: 8
+  play-services-ads-lite.properties: 8
+  play-services-ads.properties: 8
+  play-services-appset.properties: 8
+  play-services-base.properties: 8
+  play-services-basement.properties: 8
+  play-services-cast-framework.properties: 8
+  play-services-cast.properties: 8
+  play-services-cronet.properties: 8
+  play-services-flags.properties: 8
+  play-services-location.properties: 8
+  play-services-measurement-api.properties: 8
+  play-services-measurement-base.properties: 8
+  play-services-measurement-impl.properties: 8
+  play-services-measurement-sdk-api.properties: 8
+  play-services-measurement-sdk.properties: 8
+  play-services-measurement.properties: 8
+  play-services-places-placereport.properties: 8
+  play-services-stats.properties: 8
+  play-services-tasks.properties: 8
+  review-ktx.properties: 8
+  review.properties: 8
+  transport-api.properties: 8
+  universal_request_store.proto: 8
+  user-messaging-platform.properties: 8
+  version.properties: 0
+  webview_configuration_store.proto: 8
+  stamp-cert-sha256: 8
+  gateway/v1/ad_data_refresh_request.proto: 8
+  gateway/v1/ad_data_refresh_response.proto: 8
+  gateway/v1/ad_player_config_request.proto: 8
+  gateway/v1/ad_player_config_response.proto: 8
+  gateway/v1/ad_request.proto: 8
+  gateway/v1/ad_response.proto: 8
+  gateway/v1/allowed_pii.proto: 8
+  gateway/v1/campaign_state.proto: 8
+  gateway/v1/client_info.proto: 8
+  gateway/v1/developer_consent.proto: 8
+  gateway/v1/diagnostic_event_request.proto: 8
+  gateway/v1/dynamic_device_info.proto: 8
+  gateway/v1/error.proto: 8
+  gateway/v1/get_token_event_request.proto: 8
+  gateway/v1/initialization_completed_event_request.proto: 8
+  gateway/v1/initialization_request.proto: 8
+  gateway/v1/initialization_response.proto: 8
+  gateway/v1/mutable_data.proto: 8
+  gateway/v1/native_configuration.proto: 8
+  gateway/v1/operative_event_request.proto: 8
+  gateway/v1/pii.proto: 8
+  gateway/v1/privacy_update_request.proto: 8
+  gateway/v1/privacy_update_response.proto: 8
+  gateway/v1/session_counters.proto: 8
+  gateway/v1/static_device_info.proto: 8
+  gateway/v1/test_data.proto: 8
+  gateway/v1/timestamps.proto: 8
+  gateway/v1/transaction_event_request.proto: 8
+  gateway/v1/universal_request.proto: 8
+  gateway/v1/universal_response.proto: 8
+  gateway/v1/webview_configuration.proto: 8
+  google/protobuf/any.proto: 8
+  google/protobuf/api.proto: 8
+  google/protobuf/duration.proto: 8
+  google/protobuf/empty.proto: 8
+  google/protobuf/field_mask.proto: 8
+  google/protobuf/source_context.proto: 8
+  google/protobuf/struct.proto: 8
+  google/protobuf/timestamp.proto: 8
+  google/protobuf/type.proto: 8
+  google/protobuf/wrappers.proto: 8
+  headerbidding/v1/header_bidding_ad_markup.proto: 8
+  headerbidding/v1/header_bidding_token.proto: 8
+  javax/servlet/LocalStrings.properties: 8
+  javax/servlet/LocalStrings_fr.properties: 8
+  javax/servlet/LocalStrings_ja.properties: 8
+  javax/servlet/http/LocalStrings.properties: 8
+  javax/servlet/http/LocalStrings_es.properties: 8
+  javax/servlet/http/LocalStrings_fr.properties: 8
+  javax/servlet/http/LocalStrings_ja.properties: 8
+  okhttp3/internal/publicsuffix/NOTICE: 8
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: 0
+  org/eclipse/jetty/favicon.ico: 8
+  org/eclipse/jetty/http/encoding.properties: 8
+  org/eclipse/jetty/http/mime.properties: 8
+  org/eclipse/jetty/http/useragents: 0
+  org/eclipse/jetty/server/handler/jmx/AbstractHandler-mbean.properties: 8
+  org/eclipse/jetty/server/handler/jmx/ContextHandler-mbean.properties: 8
+  org/eclipse/jetty/server/handler/jmx/ContextHandlerCollection-mbean.properties: 8
+  org/eclipse/jetty/server/handler/jmx/HandlerCollection-mbean.properties: 8
+  org/eclipse/jetty/server/handler/jmx/HandlerWrapper-mbean.properties: 8
+  org/eclipse/jetty/server/handler/jmx/StatisticsHandler-mbean.properties: 8
+  org/eclipse/jetty/server/jmx/AbstractConnector-mbean.properties: 8
+  org/eclipse/jetty/server/jmx/Connector-mbean.properties: 8
+  org/eclipse/jetty/server/jmx/Handler-mbean.properties: 8
+  org/eclipse/jetty/server/jmx/HandlerContainer-mbean.properties: 8
+  org/eclipse/jetty/server/jmx/NCSARequestLog-mbean.properties: 8
+  org/eclipse/jetty/server/jmx/Server-mbean.properties: 8
+  org/eclipse/jetty/server/nio/jmx/SelectChannelConnector-mbean.properties: 8
+  org/eclipse/jetty/server/session/jmx/AbstractSessionManager-mbean.properties: 8
+  org/eclipse/jetty/servlet/jmx/FilterMapping-mbean.properties: 8
+  org/eclipse/jetty/servlet/jmx/Holder-mbean.properties: 8
+  org/eclipse/jetty/servlet/jmx/ServletContextHandler-mbean.properties: 8
+  org/eclipse/jetty/servlet/jmx/ServletHandler-mbean.properties: 8
+  org/eclipse/jetty/servlet/jmx/ServletHolder-mbean.properties: 8
+  org/eclipse/jetty/servlet/jmx/ServletMapping-mbean.properties: 8
+doNotCompress:
+- resources.arsc
+- META-INF/androidx.activity_activity-ktx.version
+- META-INF/androidx.activity_activity.version
+- META-INF/androidx.annotation_annotation-experimental.version
+- META-INF/androidx.appcompat_appcompat-resources.version
+- META-INF/androidx.appcompat_appcompat.version
+- META-INF/androidx.asynclayoutinflater_asynclayoutinflater.version
+- META-INF/androidx.browser_browser.version
+- META-INF/androidx.cardview_cardview.version
+- META-INF/androidx.coordinatorlayout_coordinatorlayout.version
+- META-INF/androidx.core_core-ktx.version
+- META-INF/androidx.core_core.version
+- META-INF/androidx.cursoradapter_cursoradapter.version
+- META-INF/androidx.customview_customview-poolingcontainer.version
+- META-INF/androidx.customview_customview.version
+- META-INF/androidx.databinding_viewbinding.version
+- META-INF/androidx.datastore_datastore-preferences.version
+- META-INF/androidx.datastore_datastore.version
+- META-INF/androidx.documentfile_documentfile.version
+- META-INF/androidx.drawerlayout_drawerlayout.version
+- META-INF/androidx.dynamicanimation_dynamicanimation.version
+- META-INF/androidx.emoji2_emoji2-views-helper.version
+- META-INF/androidx.emoji2_emoji2.version
+- META-INF/androidx.exifinterface_exifinterface.version
+- META-INF/androidx.fragment_fragment-ktx.version
+- META-INF/androidx.fragment_fragment.version
+- META-INF/androidx.interpolator_interpolator.version
+- META-INF/androidx.legacy_legacy-support-core-ui.version
+- META-INF/androidx.legacy_legacy-support-core-utils.version
+- META-INF/androidx.legacy_legacy-support-v4.version
+- META-INF/androidx.loader_loader.version
+- META-INF/androidx.localbroadcastmanager_localbroadcastmanager.version
+- META-INF/androidx.media_media.version
+- META-INF/androidx.mediarouter_mediarouter.version
+- META-INF/androidx.paging_paging-runtime-ktx.version
+- META-INF/androidx.paging_paging-runtime.version
+- META-INF/androidx.palette_palette.version
+- META-INF/androidx.preference_preference-ktx.version
+- META-INF/androidx.preference_preference.version
+- META-INF/androidx.print_print.version
+- META-INF/androidx.privacysandbox.ads_ads-adservices-java.version
+- META-INF/androidx.privacysandbox.ads_ads-adservices.version
+- META-INF/androidx.profileinstaller_profileinstaller.version
+- META-INF/androidx.recyclerview_recyclerview.version
+- META-INF/androidx.room_room-ktx.version
+- META-INF/androidx.room_room-runtime.version
+- META-INF/androidx.savedstate_savedstate-ktx.version
+- META-INF/androidx.savedstate_savedstate.version
+- META-INF/androidx.security_security-crypto-ktx.version
+- META-INF/androidx.security_security-crypto.version
+- META-INF/androidx.slidingpanelayout_slidingpanelayout.version
+- META-INF/androidx.sqlite_sqlite-framework.version
+- META-INF/androidx.sqlite_sqlite.version
+- META-INF/androidx.startup_startup-runtime.version
+- META-INF/androidx.swiperefreshlayout_swiperefreshlayout.version
+- META-INF/androidx.tracing_tracing.version
+- META-INF/androidx.transition_transition.version
+- META-INF/androidx.vectordrawable_vectordrawable-animated.version
+- META-INF/androidx.vectordrawable_vectordrawable.version
+- META-INF/androidx.versionedparcelable_versionedparcelable.version
+- META-INF/androidx.viewpager2_viewpager2.version
+- META-INF/androidx.viewpager_viewpager.version
+- META-INF/androidx.webkit_webkit.version
+- META-INF/androidx.window_window.version
+- META-INF/androidx.work_work-runtime-ktx.version
+- META-INF/androidx.work_work-runtime.version
+- META-INF/com.google.android.material_material.version
+- META-INF/kotlinx_coroutines_android.version
+- META-INF/kotlinx_coroutines_core.version
+- META-INF/kotlinx_coroutines_play_services.version
+- META-INF/kotlinx_coroutines_reactive.version
+- META-INF/services/c60
+- META-INF/services/cZ
+- META-INF/services/javax.xml.stream.XMLInputFactory
+- META-INF/services/javax.xml.stream.XMLOutputFactory
+- META-INF/services/qp0
+- META-INF/services/yq
+- png
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm
+- gif
+- res/raw/com_android_billingclient_heterodyne_info
+- res/raw/com_android_billingclient_registration_info.binarypb

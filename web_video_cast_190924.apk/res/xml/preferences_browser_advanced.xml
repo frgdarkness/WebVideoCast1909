@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference android:icon="@null" android:title="@string/use_webview_hardware_layer_title" android:key="@string/pref_use_webview_hardware_layer" android:summary="@string/use_webview_hardware_layer_summary" android:defaultValue="false" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+    <Preference android:icon="@null" android:title="@string/reset_browser_title" android:key="@string/pref_reset_browser_key" android:summary="@string/reset_browser_summary" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+    <ListPreference android:icon="@null" android:entries="@array/webview_media_integrity_api_status_strings" android:title="@string/pref_webview_media_integrity_api_status_title" android:key="@string/pref_webview_media_integrity_api_status" android:summary="@string/pref_webview_media_integrity_api_status_summary" android:defaultValue="0" android:entryValues="@array/webview_media_integrity_api_status_values" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+</PreferenceScreen>

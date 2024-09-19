@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sort_by_title" />
+    <RadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/sort_by_date_added" android:text="@string/sort_by_add_date_title" style="@style/sort_dialog_radio_button" />
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/sort_by_name" android:text="@string/sort_by_name_title" style="@style/sort_dialog_radio_button" />
+    </RadioGroup>
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/sort_order_title" />
+    <RadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/sort_order_ascending" android:text="@string/sort_ascending_title" style="@style/sort_dialog_radio_button" />
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/sort_order_descending" android:text="@string/sort_descending_title" style="@style/sort_dialog_radio_button" />
+    </RadioGroup>
+</LinearLayout>

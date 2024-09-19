@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/ripple_rect" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/subtitles_search_result_min_height" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/primary_text" android:id="@id/friendly_name" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/name" android:lineSpacingExtra="5.0dip" style="@style/subtitle_list_item_secondary_details" />
+    <TextView android:id="@id/provider" style="@style/subtitle_list_item_secondary_details" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:id="@id/language" style="@style/subtitle_list_item_secondary_details" />
+        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:id="@id/downloads" style="@style/subtitle_list_item_secondary_details" />
+    </LinearLayout>
+</LinearLayout>

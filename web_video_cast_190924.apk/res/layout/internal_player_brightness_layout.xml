@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/icon_empty" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_screen_brightness_empty_32" style="@style/internal_player_brightness_image" />
+    <com.google.android.material.slider.Slider android:id="@id/slider" android:layout_width="0.0dip" android:layout_height="16.0dip" android:stepSize="1.0" android:valueFrom="0.0" android:valueTo="100.0" app:labelBehavior="gone" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/icon_empty" app:layout_constraintRight_toLeftOf="@id/icon_full" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/icon_full" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_screen_brightness_full_32" style="@style/internal_player_brightness_image" />
+</androidx.constraintlayout.widget.ConstraintLayout>

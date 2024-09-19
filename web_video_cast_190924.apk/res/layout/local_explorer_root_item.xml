@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@color/local_folder_root_item_background" android:paddingLeft="@dimen/explorer_item_left_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/explorer_item_layout" android:background="@drawable/ripple_rect" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginTop="@dimen/explorer_poster_margin" android:layout_marginBottom="@dimen/explorer_poster_margin" android:layout_alignParentLeft="true" android:layout_alignParentRight="true">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/videoPoster" android:layout_width="24.0dip" android:layout_height="24.0dip" android:scaleType="center" android:tint="@color/primary_text" android:alpha="0.54" app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="@dimen/explorer_poster_margin" android:layout_marginBottom="@dimen/explorer_poster_margin">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/primary_text" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/videoTitle" android:layout_width="wrap_content" android:layout_height="24.0dip" android:maxLines="1" android:singleLine="true" android:alpha="0.87" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

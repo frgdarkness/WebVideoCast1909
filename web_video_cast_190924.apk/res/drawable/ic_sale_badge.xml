@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="48.0dip" android:width="48.0dip" android:viewportWidth="48.0" android:viewportHeight="48.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ic_sale_badge__0" android:pathData="M27.237,1.3408C25.4493,-0.4469 22.5507,-0.4469 20.763,1.3408L16.4152,5.6886H10.2664C7.7382,5.6886 5.6886,7.7382 5.6886,10.2664V16.4152L1.3408,20.763C-0.4469,22.5507 -0.4469,25.4493 1.3408,27.237L5.6886,31.5848V37.7335C5.6886,40.2618 7.7382,42.3114 10.2664,42.3114H16.4152L20.763,46.6592C22.5507,48.4469 25.4493,48.4469 27.237,46.6592L31.5848,42.3114H37.7335C40.2618,42.3114 42.3114,40.2618 42.3114,37.7335V31.5848L46.6592,27.237C48.4469,25.4493 48.4469,22.5507 46.6592,20.763L42.3114,16.4152V10.2665C42.3114,7.7382 40.2618,5.6886 37.7335,5.6886H31.5848L27.237,1.3408Z" android:fillType="evenOdd" />
+</vector>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/red_400" android:layout_gravity="center" android:id="@id/web_receiver_feature_warning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/web_receiver_generic_functionality_warning" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <View android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/zoom_out" android:contentDescription="@string/button_label_zoom_out" app:srcCompat="@drawable/ic_zoom_out_black_24dp" style="@style/rotate_crop_buttons" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/zoom_in" android:contentDescription="@string/button_label_zoom_in" app:srcCompat="@drawable/ic_zoom_in_black_24dp" style="@style/rotate_crop_buttons" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/rotate_ccw" android:contentDescription="@string/button_label_rotate_ccw" app:srcCompat="@drawable/ic_rotate_90_degrees_ccw_black_24dp" style="@style/rotate_crop_buttons" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/rotate_cw" android:contentDescription="@string/button_label_rotate_cw" android:scaleX="-1.0" app:srcCompat="@drawable/ic_rotate_90_degrees_ccw_black_24dp" style="@style/rotate_crop_buttons" />
+        <View android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

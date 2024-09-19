@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="452.4297dip" android:width="800.0dip" android:viewportWidth="2960.0" android:viewportHeight="1674.0" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M0,0h2960v1674h-2960z" />
+        <path android:fillColor="#ff0b3565" android:pathData="M0,0h2960v1674h-2960z" />
+        <path android:fillColor="@drawable/$notification_default__0" android:pathData="M0,0h2960v1674h-2960z" />
+        <path android:fillColor="@drawable/$notification_default__1" android:pathData="M2734.2,0L1767.3,1674H0V0H2734.2Z" />
+        <path android:fillColor="@drawable/$notification_default__2" android:pathData="M1952.5,0L985.6,1674H0V0H1952.5Z" />
+        <path android:fillColor="@drawable/$notification_default__3" android:pathData="M1281.8,0L314.9,1674H0V0H1281.8Z" />
+        <path android:fillColor="@drawable/$notification_default__4" android:pathData="M608.7,0L0,1053.8V0H608.7Z" />
+    </group>
+</vector>

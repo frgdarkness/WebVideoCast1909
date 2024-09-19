@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/red_400" android:layout_gravity="center" android:id="@id/web_receiver_feature_warning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/web_receiver_generic_functionality_warning" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/volume_lowest" android:contentDescription="@string/button_label_mute" app:srcCompat="@drawable/ic_volume_mute_black_24dp" style="@style/volume_buttons" />
+        <androidx.appcompat.widget.AppCompatSeekBar android:layout_gravity="center" android:id="@id/volume_control" android:layout_width="wrap_content" android:layout_height="@dimen/seekbar_height" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:maxHeight="@dimen/seekbar_height" android:max="100" android:progress="0" android:minHeight="@dimen/seekbar_height" android:layout_weight="1.0" android:contentDescription="@string/view_label_volume_slider" android:progressTint="@color/wvc_blue" android:progressBackgroundTint="@color/grey_200" android:thumbTint="@color/wvc_blue" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/volume_highest" android:contentDescription="@string/button_label_max_volume" app:srcCompat="@drawable/ic_volume_up_black_24dp" style="@style/volume_buttons" />
+    </LinearLayout>
+</LinearLayout>

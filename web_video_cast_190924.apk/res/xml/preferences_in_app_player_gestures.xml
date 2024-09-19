@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference android:icon="@null" android:title="@string/in_app_player_gesture_playback_via_double_tap_settings_title" android:key="@string/pref_in_app_player_gesture_playback_via_double_tap" android:summary="@string/in_app_player_gesture_playback_via_double_tap_settings_description" android:defaultValue="true" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+    <CheckBoxPreference android:icon="@null" android:title="@string/in_app_player_gesture_skip_via_swipe_settings_title" android:key="@string/pref_in_app_player_gesture_skip_via_swipe" android:summary="@string/in_app_player_gesture_skip_via_swipe_settings_description" android:defaultValue="true" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+    <CheckBoxPreference android:icon="@null" android:title="@string/in_app_player_gesture_brightness_via_swipe_settings_title" android:key="@string/pref_in_app_player_gesture_brightness_via_swipe" android:summary="@string/in_app_player_gesture_brightness_via_swipe_settings_description" android:defaultValue="true" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+    <CheckBoxPreference android:icon="@null" android:title="@string/in_app_player_gesture_volume_via_swipe_settings_title" android:key="@string/pref_in_app_player_gesture_volume_via_swipe" android:summary="@string/in_app_player_gesture_volume_via_swipe_settings_description" android:defaultValue="true" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+</PreferenceScreen>

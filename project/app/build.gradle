@@ -1,0 +1,63 @@
+plugins {
+    id 'com.android.application'
+}
+
+//E:\workspace\ZeroTeam\mod_app\web_video_cast_5.10.8\190924\web_video_cast_190924.apk
+def projectPath = "E:/workspace/ZeroTeam/mod_app/web_video_cast_5.10.8/190924/web_video_cast_190924.apk"
+
+//def projectPath = "E:/workspace/ZeroTeam/mod_app/web_video_cast_5.10.8/ver3/web_video_cast_ver3.apk"
+
+android {
+    namespace 'com.zeroapp.healthcare.web_video_cast_5108_1909'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.zeroapp.healthcare.web_video_cast_5108_1909"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    sourceSets {
+        getByName("main") {
+            manifest.srcFile("$projectPath/AndroidManifest.xml")
+            java.srcDirs(
+                    "$projectPath/smali",
+                    "$projectPath/smali_classes2",
+                    "$projectPath/smali_classes3",
+                    "$projectPath/smali_classes4",
+                    "$projectPath/smali_classes5",
+                    "$projectPath/smali_classes6",
+                    "$projectPath/smali_classes7",
+            )
+            res.srcDir("$projectPath/res")
+            assets.srcDir("$projectPath/assets")
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+
+    implementation files("$projectPath/Web_Video_Cast_5.10.8-dex2jar.jar")
+}

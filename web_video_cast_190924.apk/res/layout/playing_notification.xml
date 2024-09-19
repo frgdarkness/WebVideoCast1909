@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/playingNotificationLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/playingNotificationImage" android:layout_width="@dimen/notification_image_size_small" android:layout_height="@dimen/notification_image_size_small" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/notification_thumbnail_small" android:scaleType="centerCrop" />
+    <TextView android:id="@id/playingNotificationTitle" android:text="Movie Title" style="@style/notification_title_style" />
+    <ImageView android:id="@id/playingNotificationBkwButton" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_replay_black_24px" android:text="@string/button_label_jump_back" android:contentDescription="@string/button_label_jump_back" style="@style/small_notification_button" />
+    <ImageView android:id="@id/playingNotificationPlayButton" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_play_arrow_black_24px" android:text="@string/button_label_play_pause" android:contentDescription="@string/button_label_play_pause" style="@style/small_notification_button" />
+    <ImageView android:id="@id/playingNotificationDismiss" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/ic_close_24px" android:text="@string/button_label_stop" android:contentDescription="@string/button_label_stop" style="@style/small_notification_button" />
+</LinearLayout>

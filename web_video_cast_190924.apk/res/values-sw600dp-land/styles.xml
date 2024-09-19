@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="about_credit_link_right_margin">
+        <item name="android:layout_marginRight">0.0dip</item>
+    </style>
+    <style name="about_wrapper_for_tablets">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">600.0dip</item>
+        <item name="android:minWidth">600.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="native_ad_large_image_visibility">
+        <item name="android:visibility">visible</item>
+    </style>
+    <style name="native_ad_small_image_visibility">
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="native_ad_under_large_image_layout_width">
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+</resources>

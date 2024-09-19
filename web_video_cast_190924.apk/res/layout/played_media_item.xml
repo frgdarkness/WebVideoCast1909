@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/played_media_item_left_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/item_layout" android:background="@drawable/ripple_rect" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/more" android:layout_alignParentLeft="true">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/poster" android:layout_width="@dimen/played_media_poster_size" android:layout_height="@dimen/played_media_poster_size" android:layout_marginTop="@dimen/played_media_poster_margin" android:layout_marginBottom="@dimen/played_media_poster_margin" android:scaleType="centerCrop" app:srcCompat="@drawable/video_placeholder" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="@dimen/played_media_poster_margin" android:layout_marginBottom="@dimen/played_media_poster_margin">
+            <HorizontalScrollView android:id="@id/title_scroll" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/primary_text" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="24.0dip" android:maxLines="1" android:singleLine="true" android:alpha="0.87" />
+            </HorizontalScrollView>
+            <HorizontalScrollView android:id="@id/host_scroll" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/primary_text" android:id="@id/host" android:layout_width="wrap_content" android:layout_height="24.0dip" android:singleLine="true" android:alpha="0.54" />
+            </HorizontalScrollView>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/primary_text" android:id="@id/type" android:layout_width="fill_parent" android:layout_height="24.0dip" android:singleLine="true" android:alpha="0.54" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/primary_text" android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="24.0dip" android:singleLine="true" android:alpha="0.54" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="top" android:id="@id/more" android:background="@drawable/ripple" android:focusable="true" android:clickable="true" android:layout_width="@dimen/overflow_dots_in_list_item" android:layout_height="@dimen/overflow_dots_in_list_item" android:layout_marginRight="@dimen/overflow_dots_in_list_item_right_margin" android:scaleType="center" android:tint="@color/primary_text" android:layout_alignParentRight="true" android:alpha="0.54" app:srcCompat="@drawable/ic_more_vert_24dp" />
+</RelativeLayout>

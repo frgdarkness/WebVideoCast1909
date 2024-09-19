@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/troubleshooting_title" android:background="@color/dialog_header_blue" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/troubleshooting_dialog_title" android:lineSpacingExtra="2.0dip" android:fontFamily="@string/font_family_medium" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/primary_text" android:id="@id/troubleshooting_answer_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="16.0dip" android:lineSpacingExtra="4.0dip" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/primary_text" android:textColorLink="@color/wvc_blue" android:id="@id/troubleshooting_answer_dialog_extra_details" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:lineSpacingExtra="3.0dip" android:textIsSelectable="true" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/primary_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/need_extra_help_label" android:lineSpacingExtra="4.0dip" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/wvc_blue" android:id="@id/troubleshooting_answer_dialog_contact_support" android:background="@drawable/ripple_rect" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_support" android:lineSpacingExtra="2.0dip" />
+    </LinearLayout>
+    <View android:background="@color/grey_200" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

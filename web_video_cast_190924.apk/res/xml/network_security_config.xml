@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">127.0.0.1</domain>
+    </domain-config>
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">adsrvr.org</domain>
+        <domain includeSubdomains="true">astrodsp.com</domain>
+        <domain includeSubdomains="true">adsymptotic.com</domain>
+        <domain includeSubdomains="true">adnxs.com</domain>
+        <domain includeSubdomains="true">appnext.com</domain>
+        <domain includeSubdomains="true">amazon-adsystem.com</domain>
+        <domain includeSubdomains="true">amazonaws.com</domain>
+        <domain includeSubdomains="true">cloudfront.net</domain>
+        <domain includeSubdomains="true">applovin.com</domain>
+        <domain includeSubdomains="true">sgsnssdk.com</domain>
+        <domain includeSubdomains="true">facebook.com</domain>
+        <domain includeSubdomains="true">criteo.com</domain>
+        <domain includeSubdomains="true">app-measurement.com</domain>
+        <domain includeSubdomains="true">google-analytics.com</domain>
+        <domain includeSubdomains="true">googleadservices.com</domain>
+        <domain includeSubdomains="true">doubleclick.net</domain>
+        <domain includeSubdomains="true">gstatic.com</domain>
+        <domain includeSubdomains="true">google.com</domain>
+        <domain includeSubdomains="true">googleapis.com</domain>
+        <domain includeSubdomains="true">googletagmanager.com</domain>
+        <domain includeSubdomains="true">googleusercontent.com</domain>
+        <domain includeSubdomains="true">googlesyndication.com</domain>
+        <domain includeSubdomains="true">googletagservices.com</domain>
+        <domain includeSubdomains="true">googlevideo.com</domain>
+        <domain includeSubdomains="true">withgoogle.com</domain>
+        <domain includeSubdomains="true">firebaseapp.com</domain>
+        <domain includeSubdomains="true">unity3d.com</domain>
+        <domain includeSubdomains="true">pglstatp.com</domain>
+        <domain includeSubdomains="true">vungle.com</domain>
+        <domain includeSubdomains="true">appsflyer.com</domain>
+        <domain includeSubdomains="true">isnssdk.com</domain>
+        <domain includeSubdomains="true">ironsource.com</domain>
+        <domain includeSubdomains="true">ironsrc.com</domain>
+        <domain includeSubdomains="true">ironsrc.co.jp</domain>
+        <domain includeSubdomains="true">ironsrccdn.com</domain>
+        <domain includeSubdomains="true">inmobi.com</domain>
+        <domain includeSubdomains="true">inmobicdn.net</domain>
+        <domain includeSubdomains="true">adsmoloco.com</domain>
+        <domain includeSubdomains="true">adcolony.com</domain>
+        <domain includeSubdomains="true">adcolony.net</domain>
+        <domain includeSubdomains="true">unity3dusercontent.com</domain>
+        <domain includeSubdomains="true">jampp.com</domain>
+        <domain includeSubdomains="true">jampp.net</domain>
+        <domain includeSubdomains="true">jampp.me</domain>
+        <domain includeSubdomains="true">jampp.cn</domain>
+        <domain includeSubdomains="true">jampp.co</domain>
+        <domain includeSubdomains="true">kochava.com</domain>
+        <domain includeSubdomains="true">liftoff-creatives.io</domain>
+        <domain includeSubdomains="true">liftoff.io</domain>
+        <domain includeSubdomains="true">pangle.io</domain>
+        <domain includeSubdomains="true">pangleglobal.com</domain>
+        <domain includeSubdomains="true">lkqd.net</domain>
+        <domain includeSubdomains="true">bidswitch.net</domain>
+        <domain includeSubdomains="true">activemetering.com</domain>
+        <domain includeSubdomains="true">moatads.com</domain>
+        <domain includeSubdomains="true">cdnsynd.com</domain>
+        <domain includeSubdomains="true">tapad.com</domain>
+        <domain includeSubdomains="true">demex.com</domain>
+        <domain includeSubdomains="true">ninthdecimal.com</domain>
+        <domain includeSubdomains="true">3lift.com</domain>
+        <domain includeSubdomains="true">lortchlnk.com</domain>
+        <domain includeSubdomains="true">unrulymedia.com</domain>
+        <domain includeSubdomains="true">pubmatic216..com</domain>
+        <domain includeSubdomains="true">rayjump.com</domain>
+    </domain-config>
+</network-security-config>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/connect_dialog_bottom_troubleshoot_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/device_list_troubleshooter" android:text="@string/open_scan_troubleshooter" style="@style/device_list_troubleshoot_options" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/device_list_scan_list" android:text="@string/device_list_troubleshoot_option" style="@style/device_list_troubleshoot_options" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/add_roku_ip" android:text="@string/add_roku_ip_troubleshoot_option" style="@style/device_list_troubleshoot_options" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/toggle_wifi" android:text="@string/device_list_toggle_wifi" style="@style/device_list_troubleshoot_options" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/device_list_contact_support" android:text="@string/contact_support" style="@style/device_list_troubleshoot_options" />
+</LinearLayout>

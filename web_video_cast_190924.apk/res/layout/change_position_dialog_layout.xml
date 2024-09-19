@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout android:theme="@style/set_position_textbox" android:textColorHint="@color/white_a3_alpha" android:paddingLeft="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:boxStrokeColor="@color/white_a3_alpha" app:hintTextColor="@color/white_a3_alpha">
+        <com.google.android.material.textfield.TextInputEditText android:textColor="@color/white_f7_alpha" android:textColorHint="@color/white_a3_alpha" android:id="@id/skip_to" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/skip_to_minute" android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

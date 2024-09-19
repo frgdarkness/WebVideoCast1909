@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/window_background" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:background="@color/window_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:background="@color/toolbar_color" android:layout_width="fill_parent" android:layout_height="@dimen/app_bar_height">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/back_button" app:srcCompat="@drawable/ic_clear_black_24dp" style="@style/toolbar_icons" />
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Title" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/subtitles_dialog_title" android:maxLines="1" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="12.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <LinearLayout android:id="@id/subtitles_warning" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" style="@style/subtitles_item_row">
+                    <androidx.appcompat.widget.AppCompatImageView android:tint="@color/red_400" app:srcCompat="@drawable/ic_warning_black_24dp" style="@style/subtitles_item_image" />
+                    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/red_400" android:layout_height="wrap_content" android:text="@string/subtitles_not_supported_warning" style="@style/subtitles_item_label" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/subtitles_web_receiver_warning" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" style="@style/subtitles_item_row">
+                    <androidx.appcompat.widget.AppCompatImageView android:tint="@color/red_400" app:srcCompat="@drawable/ic_warning_black_24dp" style="@style/subtitles_item_image" />
+                    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/red_400" android:layout_height="wrap_content" android:text="@string/subtitles_not_supported_warning_web_receiver" style="@style/subtitles_item_label" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/subtitles_webos_warning" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" style="@style/subtitles_item_row">
+                    <androidx.appcompat.widget.AppCompatImageView android:tint="@color/red_400" app:srcCompat="@drawable/ic_warning_black_24dp" style="@style/subtitles_item_image" />
+                    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/red_400" android:layout_height="wrap_content" android:text="@string/subtitles_not_supported_warning_webos" style="@style/subtitles_item_label" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/fireTVSubtitlesMessage" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" style="@style/subtitles_item_row">
+                    <androidx.appcompat.widget.AppCompatImageView android:tint="@color/red_400" app:srcCompat="@drawable/ic_info_black_24dp" style="@style/subtitles_item_image" />
+                    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/red_400" android:layout_height="wrap_content" android:text="@string/fire_tv_subtitles_warning" style="@style/subtitles_item_label" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/web_receiver_subtitles_help" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" style="@style/subtitles_item_row">
+                    <androidx.appcompat.widget.AppCompatImageView android:tint="@color/green_400" app:srcCompat="@drawable/ic_info_black_24dp" style="@style/subtitles_item_image" />
+                    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/green_400" android:layout_height="wrap_content" android:text="@string/web_receiver_subtitles_help" style="@style/subtitles_item_label" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/noSubtitles" style="@style/subtitles_item_row">
+                    <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ic_clear_black_24dp" style="@style/subtitles_item_image" />
+                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/no_subtitles_button_title" style="@style/subtitles_item_label" />
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatTextView android:layout_marginTop="20.0dip" android:text="@string/subtitles_dialog_source_section_title" style="@style/subtitle_section_title" />
+                <LinearLayout android:id="@id/videoSubtitles" style="@style/subtitles_item_row">
+                    <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ic_baseline_movie_24" style="@style/subtitles_item_image" />
+                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/subtitle_dialog_label_current_video" style="@style/subtitles_item_label" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/webPageSubs" style="@style/subtitles_item_row">
+                    <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ic_public_black_24dp" style="@style/subtitles_item_image" />
+                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/subtitle_dialog_label_current_webpage" style="@style/subtitles_item_label" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/openSubs" style="@style/subtitles_item_row">
+                    <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ic_language_24dp" style="@style/subtitles_item_image" />
+                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/subtitle_dialog_label_opensubtitles_com" style="@style/subtitles_item_label" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/selectFile" style="@style/subtitles_item_row">
+                    <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ic_folder_black_24dp" style="@style/subtitles_item_image" />
+                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/subtitle_dialog_label_local_file" style="@style/subtitles_item_label" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/downloadedSubs" style="@style/subtitles_item_row">
+                    <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ic_archive_black_24dp" style="@style/subtitles_item_image" />
+                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/subtitle_dialog_label_downloaded" style="@style/subtitles_item_label" />
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatTextView android:id="@id/adjustmentsLabel" android:layout_marginTop="20.0dip" android:text="@string/subtitles_dialog_adjustments_section_title" style="@style/subtitle_section_title" />
+                <LinearLayout android:id="@id/subtitleStyleButton" style="@style/subtitles_item_row">
+                    <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ic_text_format_black_24dp" style="@style/subtitles_item_image" />
+                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/subtitle_dialog_label_text_style" style="@style/subtitles_item_label" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/timing" style="@style/subtitles_item_row">
+                    <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ic_av_timer_black_24dp" style="@style/subtitles_item_image" />
+                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/subtitle_dialog_label_timing" style="@style/subtitles_item_label" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

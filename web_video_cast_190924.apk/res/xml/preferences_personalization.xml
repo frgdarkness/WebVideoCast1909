@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ListPreference android:icon="@null" android:entries="@array/night_mode_strings" android:title="@string/pref_dark_mode_title" android:key="@string/pref_key_dark_mode" android:summary="@string/pref_dark_mode_summary" android:entryValues="@array/night_mode_values" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+    <ListPreference android:icon="@null" android:entries="@array/start_screen_strings" android:title="@string/pref_start_screen_title" android:key="@string/pref_start_screen_key" android:summary="@string/pref_start_screen_summary" android:entryValues="@array/start_screen_values" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+    <Preference android:icon="@null" android:title="@string/pref_language_title" android:key="@string/pref_language" android:summary="@string/pref_language_summary" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+</PreferenceScreen>

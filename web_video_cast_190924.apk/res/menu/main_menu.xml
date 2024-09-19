@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/nav_back_menu_item" android:title="@string/menu_navigate_back_title" app:showAsAction="never" />
+    <item android:id="@id/nav_forward_menu_item" android:title="@string/menu_navigate_forward_title" app:showAsAction="never" />
+    <item android:id="@id/menu_start_search" android:title="@string/find_in_page" app:showAsAction="never" />
+    <item android:id="@id/scan_for_videos" android:title="@string/scan_page_for_videos_menu_title" app:showAsAction="never" />
+    <item android:id="@id/report_ad" android:title="@string/report_ad_page" app:showAsAction="never" />
+    <item android:id="@id/block_ads" android:checked="false" android:title="@string/block_ads" android:checkable="true" app:showAsAction="never" />
+    <item android:id="@id/allow_popups" android:visible="true" android:title="@string/allow_popups_menu_item" app:showAsAction="never" />
+    <item android:id="@id/set_homepage" android:visible="true" android:title="@string/set_homepage" app:showAsAction="never" />
+    <item android:id="@id/remove_homepage" android:visible="true" android:title="@string/remove_homepage" app:showAsAction="never" />
+    <item android:id="@id/add_to_homescreen" android:visible="true" android:title="@string/add_to_homescreen" app:showAsAction="never" />
+    <item android:id="@id/add_bookmark" android:visible="true" android:title="@string/add_bookmark_menu_item" app:showAsAction="never" />
+    <item android:id="@id/video_ad_mode" android:title="@string/video_ad_mode_menu_item" app:showAsAction="never" />
+    <item android:id="@id/disable_intercept" android:title="@string/trouble_login_in" app:showAsAction="never" />
+    <item android:id="@id/useragent_chooser" android:title="@string/user_agent" app:showAsAction="never" />
+    <item android:id="@id/share_page_url" android:title="@string/share_via" app:showAsAction="never" />
+</menu>

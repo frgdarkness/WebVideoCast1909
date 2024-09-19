@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="center_vertical" android:id="@id/address" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="@id/delete" app:layout_constraintEnd_toStartOf="@id/delete" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/delete" />
+    <androidx.appcompat.widget.AppCompatImageButton android:id="@id/delete" android:background="@drawable/ripple_rect" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:tint="@color/primary_text" android:text="@string/remove_item" android:layout_marginEnd="8.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_remove_circle_black_24dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

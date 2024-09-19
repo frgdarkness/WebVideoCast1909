@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference android:icon="@null" android:title="@string/setting_title_browser" android:key="browserScreen" android:iconSpaceReserved="false" app:fragment="com.instantbits.cast.webvideo.settings.SettingsBrowserFragment" app:iconSpaceReserved="false" />
+    <Preference android:icon="@null" android:title="@string/setting_title_video_playback" android:key="castingScreen" android:iconSpaceReserved="false" app:fragment="com.instantbits.cast.webvideo.settings.SettingsCastingFragment" app:iconSpaceReserved="false" />
+    <Preference android:icon="@null" android:title="@string/setting_title_in_app_player" android:key="inAppPlayerScreen" android:iconSpaceReserved="false" app:fragment="com.instantbits.cast.webvideo.settings.SettingsInAppPlayerFragment" app:iconSpaceReserved="false" />
+    <Preference android:icon="@null" android:title="@string/setting_title_video_discovery" android:key="mediaDetectionScreen" android:iconSpaceReserved="false" app:fragment="com.instantbits.cast.webvideo.settings.SettingsMediaDetectionFragment" app:iconSpaceReserved="false" />
+    <Preference android:icon="@null" android:title="@string/setting_title_downloads" android:key="downloadsScreen" android:iconSpaceReserved="false" app:fragment="com.instantbits.cast.webvideo.settings.SettingsDownloadsFragment" app:iconSpaceReserved="false" />
+    <Preference android:icon="@null" android:title="@string/setting_title_personalization" android:key="personalizationScreen" android:iconSpaceReserved="false" app:fragment="com.instantbits.cast.webvideo.settings.SettingsPersonalizationFragment" app:iconSpaceReserved="false" />
+    <Preference android:icon="@null" android:title="@string/setting_title_privacy" android:key="privacyScreen" android:iconSpaceReserved="false" app:fragment="com.instantbits.cast.webvideo.settings.SettingsPrivacyFragment" app:iconSpaceReserved="false" />
+    <Preference android:icon="@null" android:title="@string/setting_title_advanced" android:key="advancedScreen" android:iconSpaceReserved="false" app:fragment="com.instantbits.cast.webvideo.settings.SettingsAdvancedFragment" app:iconSpaceReserved="false" />
+</PreferenceScreen>

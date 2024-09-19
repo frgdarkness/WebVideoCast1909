@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textview.MaterialTextView android:textSize="16.0sp" android:textColor="@color/primary_text" android:id="@id/topExplanation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/already_have_premium_top_line" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="24.0dip" android:tint="@color/secondary_text" app:srcCompat="@drawable/ic_baseline_supervisor_account_24" />
+    <com.google.android.material.textview.MaterialTextView android:text="@string/already_have_premium_multiple_accounts_title" style="@style/already_have_premium_question" />
+    <com.google.android.material.textview.MaterialTextView android:text="@string/already_have_premium_multiple_accounts_answer" style="@style/already_have_premium_question_answer" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="24.0dip" android:tint="@color/secondary_text" app:srcCompat="@drawable/ic_baseline_cached_24" />
+    <com.google.android.material.textview.MaterialTextView android:text="@string/already_have_premium_play_store_cache" style="@style/already_have_premium_question" />
+    <com.google.android.material.textview.MaterialTextView android:text="@string/already_have_premium_play_store_cache_answer" style="@style/already_have_premium_question_answer" />
+</LinearLayout>

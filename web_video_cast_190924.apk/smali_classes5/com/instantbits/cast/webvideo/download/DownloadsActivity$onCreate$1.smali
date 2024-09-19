@@ -1,0 +1,51 @@
+.class public final Lcom/instantbits/cast/webvideo/download/DownloadsActivity$onCreate$1;
+.super Landroidx/recyclerview/widget/GridLayoutManager;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/instantbits/cast/webvideo/download/DownloadsActivity;->onCreate(Landroid/os/Bundle;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+
+# virtual methods
+.method public onLayoutChildren(Landroidx/recyclerview/widget/RecyclerView$w;Landroidx/recyclerview/widget/RecyclerView$A;)V
+    .locals 1
+
+    const-string v0, "recycler"
+
+    invoke-static {p1, v0}, LJW;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "state"
+
+    invoke-static {p2, v0}, LJW;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    :try_start_0
+    invoke-super {p0, p1, p2}, Landroidx/recyclerview/widget/GridLayoutManager;->onLayoutChildren(Landroidx/recyclerview/widget/RecyclerView$w;Landroidx/recyclerview/widget/RecyclerView$A;)V
+    :try_end_0
+    .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p1
+
+    invoke-static {}, Lcom/instantbits/cast/webvideo/download/DownloadsActivity;->S0()Ljava/lang/String;
+
+    move-result-object p2
+
+    const-string v0, "meet a IOOBE in RecyclerView"
+
+    invoke-static {p2, v0, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    invoke-static {p1}, Lcom/instantbits/android/utils/a;->s(Ljava/lang/Throwable;)V
+
+    :goto_0
+    return-void
+.end method

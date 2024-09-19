@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/default_dialog_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/primary_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/not_connected_message_for_dialog" android:lineSpacingExtra="3.0dip" android:alpha="0.54" />
+    <LinearLayout android:id="@id/connect" style="@style/connect_dialog_button_row">
+        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ic_cast_black_24dp" style="@style/connect_dialog_button_icon" />
+        <androidx.appcompat.widget.AppCompatTextView android:text="@string/connect_dialog_connect_button" style="@style/connect_dialog_button_label" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/download" style="@style/connect_dialog_button_row">
+        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ic_file_download_black_24dp" style="@style/connect_dialog_button_icon" />
+        <androidx.appcompat.widget.AppCompatTextView android:text="@string/connect_dialog_download_button" style="@style/connect_dialog_button_label" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/addAllToPlaylist" style="@style/connect_dialog_button_row">
+        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ic_playlist_play_black_24dp" style="@style/connect_dialog_button_icon" />
+        <androidx.appcompat.widget.AppCompatTextView android:text="@string/add_to_queue_button" style="@style/connect_dialog_button_label" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/open_with" style="@style/connect_dialog_button_row">
+        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ic_open_in_new_black_24dp" style="@style/connect_dialog_button_icon" />
+        <androidx.appcompat.widget.AppCompatTextView android:text="@string/connect_dialog_open_with_button" style="@style/connect_dialog_button_label" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/play_in_app" style="@style/connect_dialog_button_row">
+        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ic_baseline_phone_android_24" style="@style/connect_dialog_button_icon" />
+        <androidx.appcompat.widget.AppCompatTextView android:text="@string/play_video_in_app" style="@style/connect_dialog_button_label" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/more_options" style="@style/connect_dialog_button_row">
+        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ic_more_horiz_black_24dp" style="@style/connect_dialog_button_icon" />
+        <androidx.appcompat.widget.AppCompatTextView android:text="@string/connect_dialog_more_options_button" style="@style/connect_dialog_button_label" />
+    </LinearLayout>
+</LinearLayout>

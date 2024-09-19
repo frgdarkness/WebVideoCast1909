@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="@dimen/subtitle_height_layout_height">
+                <FrameLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/height_frame" android:layout_width="64.0dip" android:layout_height="@dimen/subtitle_height_layout_height" android:layout_marginLeft="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/tv_preview" app:layout_constraintTop_toTopOf="parent">
+                    <androidx.appcompat.widget.AppCompatSeekBar android:layout_gravity="center" android:id="@id/subtitle_height" android:layout_width="@dimen/subtitle_height_layout_height" android:layout_height="32.0dip" android:max="100" android:progress="90" android:rotation="90.0" />
+                </FrameLayout>
+                <View android:id="@id/tv_preview" android:background="@color/grey_200" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_margin="24.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/height_frame" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <com.google.android.material.textview.MaterialTextView android:textSize="14.0sp" android:id="@id/subtitle_preview" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Subtitle Preview" android:fontFamily="sans-serif" app:layout_constraintBottom_toBottomOf="@id/tv_preview" app:layout_constraintLeft_toLeftOf="@id/tv_preview" app:layout_constraintRight_toRightOf="@id/tv_preview" app:layout_constraintTop_toTopOf="@id/tv_preview" app:layout_constraintVertical_bias="0.9" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="76.0dip" android:layout_marginRight="@dimen/subtitle_style_right_margin">
+                <androidx.appcompat.widget.AppCompatTextView android:layout_marginLeft="@dimen/subtitle_style_left_margin" android:text="@string/subtitle_background_style_label" style="@style/subtitle_style_section_label" />
+                <androidx.appcompat.widget.AppCompatSpinner android:gravity="center_vertical" android:id="@id/background_style_spinner" android:paddingLeft="-5.0dip" android:paddingRight="-5.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="8.0dip" android:popupBackground="@color/default_dialog_background" android:dropDownWidth="fill_parent" android:overlapAnchor="false" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="104.0dip" android:layout_marginLeft="@dimen/subtitle_style_left_margin" android:layout_marginRight="@dimen/subtitle_style_right_margin">
+                <androidx.appcompat.widget.AppCompatTextView android:text="@string/subtitle_background_color" style="@style/subtitle_style_section_label" />
+                <LinearLayout style="@style/subtitle_style_color_row">
+                    <LinearLayout android:id="@id/background_color_black" android:background="@color/black" style="@style/subtitle_style_color_selectors">
+                        <include layout="@layout/subtitle_color_selected_indicator" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/background_color_white" android:background="@color/white" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/background_color_blue_grey" android:background="@color/blue_grey_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/background_color_brown" android:background="@color/brown_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/background_color_red" android:background="@color/red_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/background_color_orange" android:background="@color/orange_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/background_color_yellow" android:background="@color/yellow_A200" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/background_color_green" android:background="@color/green_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/background_color_teal" android:background="@color/teal_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/background_color_cyan" android:background="@color/cyan_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/background_color_light_blue" android:background="@color/light_blue_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/background_color_indigo" android:background="@color/indigo_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/background_color_purple" android:background="@color/purple_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/background_color_pink" android:background="@color/pink_500" style="@style/subtitle_style_color_selectors" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginTop="2.0dip">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:layout_width="24.0dip" android:layout_height="32.0dip" android:scaleType="center" android:tint="@color/black" android:alpha="0.54" app:srcCompat="@drawable/ic_invert_colors_black_24dp" />
+                    <androidx.appcompat.widget.AppCompatSeekBar android:layout_gravity="center" android:id="@id/background_alpha" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:maxHeight="32.0dip" android:max="100" android:progress="50" android:minHeight="32.0dip" android:layout_weight="1.0" />
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/secondary_text" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/background_alpha_label" android:layout_width="wrap_content" android:layout_height="32.0dip" android:text="100%" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="76.0dip" android:layout_marginRight="@dimen/subtitle_style_right_margin">
+                <androidx.appcompat.widget.AppCompatTextView android:layout_marginLeft="@dimen/subtitle_style_left_margin" android:text="@string/subtitle_font_family_label" style="@style/subtitle_style_section_label" />
+                <androidx.appcompat.widget.AppCompatSpinner android:gravity="center_vertical" android:id="@id/font_family_spinner" android:paddingLeft="-5.0dip" android:paddingRight="-5.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="8.0dip" android:popupBackground="@color/default_dialog_background" android:dropDownWidth="fill_parent" android:overlapAnchor="false" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="76.0dip" android:layout_marginLeft="@dimen/subtitle_style_left_margin" android:layout_marginRight="@dimen/subtitle_style_right_margin">
+                <androidx.appcompat.widget.AppCompatTextView android:text="@string/subtitle_text_color" style="@style/subtitle_style_section_label" />
+                <LinearLayout style="@style/subtitle_style_color_row">
+                    <LinearLayout android:id="@id/text_color_black" android:background="@color/black" android:scaleType="center" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_color_white" android:background="@color/white" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_color_blue_grey" android:background="@color/blue_grey_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_color_brown" android:background="@color/brown_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_color_red" android:background="@color/red_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_color_orange" android:background="@color/orange_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_color_yellow" android:background="@color/yellow_A200" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_color_green" android:background="@color/green_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_color_teal" android:background="@color/teal_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_color_cyan" android:background="@color/cyan_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_color_light_blue" android:background="@color/light_blue_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_color_indigo" android:background="@color/indigo_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_color_purple" android:background="@color/purple_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_color_pink" android:background="@color/pink_500" style="@style/subtitle_style_color_selectors" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="92.0dip" android:layout_marginLeft="@dimen/subtitle_style_left_margin" android:layout_marginRight="@dimen/subtitle_style_right_margin">
+                <View android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.AppCompatTextView android:text="@string/subtitle_text_size_label" style="@style/subtitle_style_section_label" />
+                <LinearLayout android:orientation="horizontal" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="56.0dip" android:minWidth="240.0dip">
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="15.0sp" android:id="@id/text_scale_smallest" android:text="A" style="@style/subtitles_style_text_size" />
+                    <View style="@style/subtitle_style_text_size_spacers" />
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="20.0sp" android:id="@id/text_scale_smaller" android:text="A" style="@style/subtitles_style_text_size" />
+                    <View style="@style/subtitle_style_text_size_spacers" />
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="25.0sp" android:id="@id/text_scale_normal" android:text="A" style="@style/subtitles_style_text_size" />
+                    <View style="@style/subtitle_style_text_size_spacers" />
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="30.0sp" android:id="@id/text_scale_larger" android:text="A" style="@style/subtitles_style_text_size" />
+                    <View style="@style/subtitle_style_text_size_spacers" />
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="35.0sp" android:id="@id/text_scale_largest" android:text="A" style="@style/subtitles_style_text_size" />
+                    <View style="@style/subtitle_style_text_size_spacers" />
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="40.0sp" android:id="@id/text_scale_largest_2" android:text="A" style="@style/subtitles_style_text_size" />
+                </LinearLayout>
+                <View android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="76.0dip" android:layout_marginRight="@dimen/subtitle_style_right_margin">
+                <androidx.appcompat.widget.AppCompatTextView android:layout_marginLeft="@dimen/subtitle_style_left_margin" android:text="@string/subtitle_text_edge_label" style="@style/subtitle_style_section_label" />
+                <androidx.appcompat.widget.AppCompatSpinner android:gravity="center_vertical" android:id="@id/text_edge_spinner" android:paddingLeft="-5.0dip" android:paddingRight="-5.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="8.0dip" android:popupBackground="@color/popup_menu_background" android:dropDownWidth="fill_parent" android:overlapAnchor="false" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/text_edge_color_row" android:layout_width="fill_parent" android:layout_height="76.0dip" android:layout_marginLeft="@dimen/subtitle_style_left_margin" android:layout_marginRight="@dimen/subtitle_style_right_margin">
+                <androidx.appcompat.widget.AppCompatTextView android:text="@string/subtitle_text_edge_color" style="@style/subtitle_style_section_label" />
+                <LinearLayout style="@style/subtitle_style_color_row">
+                    <LinearLayout android:id="@id/text_edge_color_black" android:background="@color/black" android:scaleType="center" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_edge_color_white" android:background="@color/white" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_edge_color_blue_grey" android:background="@color/blue_grey_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_edge_color_brown" android:background="@color/brown_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_edge_color_red" android:background="@color/red_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_edge_color_orange" android:background="@color/orange_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_edge_color_yellow" android:background="@color/yellow_A200" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_edge_color_green" android:background="@color/green_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_edge_color_teal" android:background="@color/teal_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_edge_color_cyan" android:background="@color/cyan_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_edge_color_light_blue" android:background="@color/light_blue_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_edge_color_indigo" android:background="@color/indigo_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_edge_color_purple" android:background="@color/purple_500" style="@style/subtitle_style_color_selectors" />
+                    <LinearLayout android:id="@id/text_edge_color_pink" android:background="@color/pink_500" style="@style/subtitle_style_color_selectors" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="@dimen/subtitle_style_left_margin" android:layout_marginRight="@dimen/subtitle_style_right_margin">
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/primary_text" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/subtitle_style_bold_text_switch" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.AppCompatCheckBox android:layout_gravity="center_vertical" android:id="@id/bold_text" android:layout_width="32.0dip" android:layout_height="32.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

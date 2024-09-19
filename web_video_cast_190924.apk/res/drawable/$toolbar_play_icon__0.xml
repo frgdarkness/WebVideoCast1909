@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:name="vector" android:height="56.0dip" android:width="56.0dip" android:viewportWidth="56.0" android:viewportHeight="56.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:name="ripple_group" android:pivotX="28.0" android:pivotY="28.0">
+        <path android:name="ripple" android:fillColor="#ffffffff" android:pathData="M 28 4 C 22.932 4 17.993 5.605 13.893 8.584 C 9.793 11.562 6.741 15.764 5.175 20.584 C 3.609 25.403 3.609 30.597 5.175 35.416 C 6.741 40.236 9.793 44.438 13.893 47.416 C 17.993 50.395 22.932 52 28 52 C 33.068 52 38.007 50.395 42.107 47.416 C 46.207 44.438 49.259 40.236 50.825 35.416 C 52.391 30.597 52.391 25.403 50.825 20.584 C 49.259 15.764 46.207 11.562 42.107 8.584 C 38.007 5.605 33.068 4 28 4 Z" android:strokeAlpha="0.0" android:fillAlpha="0.0" />
+    </group>
+    <path android:name="circle" android:fillColor="#ffffc107" android:pathData="M 28 18 C 22.48 18 18 22.48 18 28 C 18 33.52 22.48 38 28 38 C 33.52 38 38 33.52 38 28 C 38 22.48 33.52 18 28 18 Z" android:strokeWidth="1.0" />
+    <path android:name="play" android:fillColor="#ff000000" android:pathData="M 26 32.5 L 26 23.5 L 32 28 L 26 32.5 Z" android:strokeWidth="1.0" />
+</vector>

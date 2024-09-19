@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference android:icon="@null" android:title="@string/pref_prompt_subtitles_settings_title" android:key="@string/pref_key_prompt_subtitles" android:summary="@string/pref_prompt_subtitles_settings_description" android:defaultValue="false" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+    <ListPreference android:icon="@null" android:entries="@array/languages_for_preferences" android:title="@string/pref_default_subtitle_language_title" android:key="@string/pref_key_default_subtitle_language" android:summary="@string/pref_default_subtitle_language_description" android:entryValues="@array/languages_for_preferences" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+    <CheckBoxPreference android:icon="@null" android:title="@string/dont_recode_srt_pref_title" android:key="@string/pref_dont_recode_srt" android:summary="@string/dont_recode_srt_pref_summary" android:defaultValue="false" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+    <CheckBoxPreference android:icon="@null" android:title="@string/recode_vtt_pref_title" android:key="@string/pref_recode_vtt" android:summary="@string/recode_vtt_pref_summary" android:defaultValue="true" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+</PreferenceScreen>

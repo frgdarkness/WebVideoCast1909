@@ -1,0 +1,73 @@
+.class final Lkx0$a;
+.super LM10;
+.source "SourceFile"
+
+# interfaces
+.implements LVM;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lkx0;->b(Ljava/lang/String;LfC0;LVM;LEq;ILjava/lang/Object;)LIA0;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+
+# static fields
+.field public static final d:Lkx0$a;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lkx0$a;
+
+    invoke-direct {v0}, Lkx0$a;-><init>()V
+
+    sput-object v0, Lkx0$a;->d:Lkx0$a;
+
+    return-void
+.end method
+
+.method constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    invoke-direct {p0, v0}, LM10;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Landroid/content/Context;)Ljava/util/List;
+    .locals 1
+
+    const-string v0, "it"
+
+    invoke-static {p1, v0}, LJW;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {}, Lkl;->j()Ljava/util/List;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Landroid/content/Context;
+
+    invoke-virtual {p0, p1}, Lkx0$a;->a(Landroid/content/Context;)Ljava/util/List;
+
+    move-result-object p1
+
+    return-object p1
+.end method

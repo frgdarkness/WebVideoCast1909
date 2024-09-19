@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/default_dialog_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/subtitles_top_margin" android:layout_marginBottom="@dimen/subtitles_bottom_margin" android:layout_marginStart="@dimen/subtitles_left_margin">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Title" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/subtitle_search_dialog_title" android:layout_weight="1.0" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/more" android:background="@drawable/ripple_rect" android:focusable="true" android:clickable="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="center" android:tint="@color/primary_text" app:srcCompat="@drawable/ic_more_vert_24" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/subtitles_top_margin" android:layout_marginStart="@dimen/subtitles_left_margin" android:layout_marginEnd="@dimen/subtitles_right_margin">
+                    <TextView android:textSize="12.0sp" android:textColor="?android:textColorHint" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/language_dropdown_title_for_subtitles" />
+                    <TextView android:id="@id/languages" android:background="@drawable/abc_edit_text_material" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/subtitles_languages_loading" android:popupBackground="@color/default_dialog_background" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/subtitles_top_margin" android:layout_marginStart="@dimen/subtitles_left_margin" android:layout_marginEnd="@dimen/subtitles_right_margin">
+                    <com.google.android.material.textfield.TextInputLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="16.0dip">
+                        <androidx.appcompat.widget.AppCompatAutoCompleteTextView android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/subtitle_video_name_hint" android:inputType="text" android:importantForAutofill="noExcludeDescendants" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <androidx.appcompat.widget.SwitchCompat android:id="@id/name_must_match" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/subtitle_name_match" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/subtitles_top_margin" android:layout_marginStart="@dimen/subtitles_left_margin" android:layout_marginEnd="@dimen/subtitles_right_margin">
+                    <com.google.android.material.textfield.TextInputLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <com.google.android.material.textfield.TextInputEditText android:id="@id/season" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/subtitle_season_hint" android:inputType="number" android:importantForAutofill="noExcludeDescendants" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <com.google.android.material.textfield.TextInputEditText android:id="@id/episode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/subtitle_episode_hint" android:inputType="number" android:importantForAutofill="noExcludeDescendants" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <com.google.android.material.textfield.TextInputEditText android:id="@id/imdb_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/subtitle_imdb_id_hint" android:inputType="text" android:importantForAutofill="noExcludeDescendants" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/subtitles_top_margin" android:layout_marginBottom="@dimen/subtitles_bottom_margin" android:layout_marginStart="@dimen/subtitles_left_margin" android:layout_marginEnd="@dimen/subtitles_right_margin">
+                    <androidx.appcompat.widget.AppCompatImageView android:gravity="end|center" android:id="@id/open_subtitles_configure" android:background="@drawable/ripple_rect" android:focusable="true" android:clickable="true" android:layout_width="40.0dip" android:layout_height="48.0dip" android:scaleType="center" android:tint="@color/primary_text" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_settings_black_24dp" />
+                    <androidx.appcompat.widget.AppCompatButton android:id="@id/clear_button" android:layout_width="wrap_content" android:layout_height="48.0dip" android:minWidth="88.0dip" android:text="@string/subtitles_clear_button" android:fontFamily="@string/font_family_medium" app:layout_constraintEnd_toStartOf="@id/search_button" app:layout_constraintTop_toTopOf="parent" />
+                    <androidx.appcompat.widget.AppCompatButton android:id="@id/search_button" android:layout_width="wrap_content" android:layout_height="48.0dip" android:minWidth="88.0dip" android:text="@string/subtitles_search_button" android:fontFamily="@string/font_family_medium" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+            <include android:id="@id/results" layout="@layout/subtitles_search_results" />
+        </LinearLayout>
+    </ScrollView>
+    <View android:background="@color/black_12_percent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

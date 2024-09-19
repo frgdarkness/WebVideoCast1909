@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/iconLayout" android:background="@drawable/circle_background_white_or_gray" android:layout_width="96.0dip" android:layout_height="96.0dip" android:layout_marginBottom="16.0dip">
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="54.0dip" android:layout_height="54.0dip" android:scaleType="fitXY" android:tint="@color/secondary_text" app:srcCompat="@drawable/ic_no_subtitles" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <com.google.android.material.textview.MaterialTextView android:textSize="16.0sp" android:textColor="@color/primary_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/open_subtitles_no_subtitles_found" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/empty_view_background" android:paddingLeft="24.0dip" android:paddingTop="16.0dip" android:paddingRight="24.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/iconLayout" android:background="@drawable/circle_background_white_or_gray" android:layout_width="96.0dip" android:layout_height="96.0dip" android:layout_marginBottom="16.0dip">
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="54.0dip" android:layout_height="54.0dip" android:scaleType="fitXY" android:tint="@color/secondary_text" android:alpha="0.54" app:srcCompat="@drawable/ic_no_devices" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0dip" android:textColor="@color/primary_text" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/not_finding_your_streaming_device" android:layout_weight="1.0" android:lineSpacingExtra="1.0dip" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/expandHelp" android:background="@drawable/ripple" android:focusable="true" android:clickable="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:tint="@color/primary_text" app:srcCompat="@drawable/ic_keyboard_arrow_down_black_24dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/missingDeviceMoreInfo" android:background="@color/dialog_header_blue" android:paddingLeft="24.0dip" android:paddingTop="16.0dip" android:paddingRight="24.0dip" android:paddingBottom="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/please_reboot_device" style="@style/missing_device_blue_back_text" />
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/vpn_missing_device" style="@style/missing_device_blue_back_text" />
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/still_having_problems" style="@style/missing_device_blue_back_text" />
+        <androidx.appcompat.widget.AppCompatButton android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/missing_device_contact_support" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_support" android:lineSpacingExtra="2.0dip" android:fontFamily="@string/font_family_medium" app:backgroundTint="@color/color_accent" />
+    </LinearLayout>
+</LinearLayout>

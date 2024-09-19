@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:textColor="@color/white" android:id="@id/slideshowRadioGroup" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/manual" android:tag="-1" android:text="@string/manual_slide_show_mode" style="@style/slideshowSecondsStyle" />
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/seconds5" android:tag="5" android:text="@string/seconds_5" style="@style/slideshowSecondsStyle" />
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/seconds10" android:tag="10" android:text="@string/seconds_10" style="@style/slideshowSecondsStyle" />
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/seconds20" android:tag="20" android:text="@string/seconds_20" style="@style/slideshowSecondsStyle" />
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/seconds25" android:tag="25" android:text="@string/seconds_25" style="@style/slideshowSecondsStyle" />
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/seconds30" android:tag="30" android:text="@string/seconds_30" style="@style/slideshowSecondsStyle" />
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/seconds40" android:tag="40" android:text="@string/seconds_40" style="@style/slideshowSecondsStyle" />
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/seconds50" android:tag="50" android:text="@string/seconds_50" style="@style/slideshowSecondsStyle" />
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/seconds60" android:tag="60" android:text="@string/seconds_60" style="@style/slideshowSecondsStyle" />
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/seconds90" android:tag="90" android:text="@string/seconds_90" style="@style/slideshowSecondsStyle" />
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/seconds120" android:tag="120" android:text="@string/seconds_120" style="@style/slideshowSecondsStyle" />
+    </RadioGroup>
+</LinearLayout>

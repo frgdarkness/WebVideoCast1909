@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/local_media_store_shortcuts_layout" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/local_files" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/local_videos_recycler_margin_left" android:layout_marginRight="@dimen/local_videos_recycler_margin_right" android:layout_marginBottom="16.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/no_local_files" android:background="@color/empty_view_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:background="@drawable/circle_background_white_or_gray" android:layout_width="164.0dip" android:layout_height="164.0dip">
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/noVideosImage" android:layout_width="72.0dip" android:layout_height="72.0dip" android:scaleType="fitXY" android:tint="@color/secondary_text" android:alpha="0.54" app:srcCompat="@drawable/ic_no_local_videos" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/primary_text" android:layout_gravity="center_horizontal" android:id="@id/noItemsFound" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/no_videos_found_on_your_device" android:lineSpacingExtra="4.0dip" android:alpha="0.54" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="fill_vertical" android:orientation="vertical" android:id="@id/no_permission" android:background="@color/empty_view_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:background="@drawable/circle_background_white_or_gray" android:layout_width="164.0dip" android:layout_height="164.0dip">
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="72.0dip" android:layout_height="72.0dip" android:scaleType="fitXY" android:tint="@color/secondary_text" app:srcCompat="@drawable/ic_error_outline_black_24dp" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/secondary_text" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/file_access_permission_is_needed" android:lineSpacingExtra="4.0dip" />
+        <androidx.appcompat.widget.AppCompatButton android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/grant_permission" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginTop="16.0dip" android:text="@string/local_media_permission_button" android:fontFamily="@string/font_family_medium" app:backgroundTint="@color/wvc_blue" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/no_search_results" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/no_videos_found_with_that_name" android:layout_weight="1.0" android:lineSpacingExtra="4.0dip" android:alpha="0.54" />
+</LinearLayout>

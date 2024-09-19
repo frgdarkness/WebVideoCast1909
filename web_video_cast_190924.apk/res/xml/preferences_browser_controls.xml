@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference android:icon="@null" android:title="@string/show_zoom_controls_title" android:key="@string/pref_show_zoom_controls_key" android:summary="@string/show_zoom_controls_summary" android:defaultValue="false" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+    <CheckBoxPreference android:icon="@null" android:title="@string/user_gesture_play_title" android:key="@string/pref_user_gesture_play" android:summary="@string/user_gesture_play_summary" android:defaultValue="true" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+</PreferenceScreen>

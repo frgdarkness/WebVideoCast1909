@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/primary_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_side_padding" android:layout_marginRight="@dimen/dialog_side_padding" android:layout_marginBottom="12.0dip" android:text="@string/resume_message" android:lineSpacingExtra="3.0dip" android:alpha="0.54" />
+    <LinearLayout android:id="@id/resume_from_last_played_layout" style="@style/resume_dialog_item_row">
+        <View style="@style/spacer_black_12" />
+        <LinearLayout android:id="@id/last_played_play_row" style="@style/resume_dialog_padded_row">
+            <LinearLayout style="@style/resume_dialog_info_layout">
+                <androidx.appcompat.widget.AppCompatTextView android:text="@string/resume_dialog_last_played_label" style="@style/resume_dialog_item_label" />
+                <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:id="@id/last_played_progress_bar" app:mpb_progressStyle="horizontal" app:mpb_showTrack="false" app:mpb_useIntrinsicPadding="false" style="@style/resume_dialog_progress_bar" />
+                <androidx.appcompat.widget.AppCompatTextView android:id="@id/last_played_progress_label" android:text="Played xyz of xyz" style="@style/resume_dialog_progress_label" />
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/last_played_play_button" app:srcCompat="@drawable/ic_play_arrow_black_24dp_vector" style="@style/resume_dialog_play_button" />
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/spacer_black_12" />
+    <LinearLayout android:id="@id/resume_from_web_page_layout" style="@style/resume_dialog_item_row">
+        <LinearLayout android:id="@id/web_page_play_row" style="@style/resume_dialog_padded_row">
+            <LinearLayout style="@style/resume_dialog_info_layout">
+                <androidx.appcompat.widget.AppCompatTextView android:text="@string/resume_dialog_web_page_label" style="@style/resume_dialog_item_label" />
+                <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:id="@id/web_page_progress_bar" app:mpb_progressStyle="horizontal" app:mpb_showTrack="false" app:mpb_useIntrinsicPadding="false" style="@style/resume_dialog_progress_bar" />
+                <androidx.appcompat.widget.AppCompatTextView android:id="@id/web_page_progress_label" android:text="Played xyz of xyz" style="@style/resume_dialog_progress_label" />
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/web_page_play_button" app:srcCompat="@drawable/ic_play_arrow_black_24dp_vector" style="@style/resume_dialog_play_button" />
+        </LinearLayout>
+        <View style="@style/spacer_black_12" />
+    </LinearLayout>
+</LinearLayout>

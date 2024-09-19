@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/cast_to_device" android:title="@string/cast_to_device" />
+    <item android:id="@id/play_in_app" android:title="@string/play_video_in_app" />
+    <item android:id="@id/play_live_stream" android:title="@string/play_live_stream_menu_item" />
+    <item android:id="@id/add_to_queue" android:title="@string/add_to_queue_menu_item" />
+    <item android:id="@id/download" android:title="@string/download_video_menu_item" />
+    <item android:id="@id/open_with" android:title="@string/open_with_menu_item" />
+    <item android:id="@id/open_web_page" android:title="@string/open_web_page_menu_item" />
+    <item android:id="@id/rename_video" android:title="@string/rename_item" />
+    <item android:id="@id/remove_item" android:title="@string/remove_item" />
+    <item android:id="@id/copy_to_clipboard" android:title="@string/copy_to_clipboard" />
+</menu>

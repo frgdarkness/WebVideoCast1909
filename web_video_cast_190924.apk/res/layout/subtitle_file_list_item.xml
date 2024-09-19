@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/subtitle_file_list_item_image" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="8.0dip" android:scaleType="center" android:tint="@color/secondary_text" app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/subtitle_file_list_file_text_size" android:textColor="@color/primary_text" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/subtitle_file_list_item_file_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:minHeight="24.0dip" android:text="file name" android:lineSpacingExtra="4.0dip" />
+</LinearLayout>

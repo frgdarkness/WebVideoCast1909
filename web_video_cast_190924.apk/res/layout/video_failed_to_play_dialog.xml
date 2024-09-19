@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:id="@id/error_image" android:layout_width="136.0dip" android:layout_height="111.0dip" android:layout_marginLeft="@dimen/video_error_side_margins" android:layout_marginRight="@dimen/video_error_side_margins" android:layout_marginBottom="16.0dip" app:srcCompat="@drawable/wvc_error_illustration" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/primary_text" android:gravity="center|left" android:layout_gravity="left" android:id="@id/error_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/video_error_side_margins" android:layout_marginRight="@dimen/video_error_side_margins" android:text="@string/error_playing_video_apologies" android:lineSpacingExtra="3.0dip" android:alpha="0.87" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/primary_text" android:gravity="center|left" android:layout_gravity="left" android:id="@id/error_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/video_error_side_margins" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/video_error_side_margins" android:text="@string/error_playing_video_instructions" android:lineSpacingExtra="3.0dip" android:alpha="0.87" />
+            <LinearLayout android:id="@id/suggestion_layout" android:layout_marginTop="24.0dip" style="@style/video_failed_link_line">
+                <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ic_build_black_24dp" app:tint="@color/wvc_blue" style="@style/video_failed_link_line_icon" />
+                <androidx.appcompat.widget.AppCompatTextView android:id="@id/suggestion_action" android:text="@string/error_playing_error_help_local_video" style="@style/video_failed_link_line_text" />
+                <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ic_chevron_right_black_24dp" style="@style/video_failed_link_line_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/contact_support_layout" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" style="@style/video_failed_link_line">
+                <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ic_mail_black_24dp" app:tint="@color/wvc_blue" style="@style/video_failed_link_line_icon" />
+                <androidx.appcompat.widget.AppCompatTextView android:id="@id/contact_support_action" android:text="@string/contact_support" style="@style/video_failed_link_line_text" />
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/arrow_text" app:srcCompat="@drawable/ic_chevron_right_black_24dp" style="@style/video_failed_link_line_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

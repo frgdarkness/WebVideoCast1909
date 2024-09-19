@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/ic_bookmark_blue" android:enabled="true" android:shortcutId="bookmarks" android:shortcutShortLabel="@string/nav_title_bookmarks" android:shortcutLongLabel="@string/nav_title_bookmarks">
+        <intent android:targetPackage="com.instantbits.cast.webvideo" android:action="android.intent.action.VIEW" android:targetClass="com.instantbits.cast.webvideo.bookmarks.BookmarksActivity" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_local_videos_blue" android:enabled="true" android:shortcutId="localmedia" android:shortcutShortLabel="@string/shortcut_local_media" android:shortcutLongLabel="@string/shortcut_local_media">
+        <intent android:targetPackage="com.instantbits.cast.webvideo" android:action="android.intent.action.VIEW" android:targetClass="com.instantbits.cast.webvideo.local.LocalActivity" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_star_blue_24dp" android:enabled="true" android:shortcutId="mostvisited" android:shortcutShortLabel="@string/shortcut_most_visited" android:shortcutLongLabel="@string/shortcut_most_visited">
+        <intent android:targetPackage="com.instantbits.cast.webvideo" android:action="android.intent.action.VIEW" android:targetClass="com.instantbits.cast.webvideo.mostvisited.MostVisitedActivity" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_tv_blue_24dp" android:enabled="true" android:shortcutId="iptv" android:shortcutShortLabel="@string/shortcut_iptv" android:shortcutLongLabel="@string/shortcut_iptv">
+        <intent android:targetPackage="com.instantbits.cast.webvideo" android:action="android.intent.action.VIEW" android:targetClass="com.instantbits.cast.webvideo.iptv.IPTVListsActivity" />
+    </shortcut>
+</shortcuts>

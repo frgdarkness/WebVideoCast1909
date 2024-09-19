@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/window_background" android:layout_width="fill_parent" android:layout_height="@dimen/app_bar_height" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/back_button" app:srcCompat="@drawable/ic_clear_black_24dp" style="@style/toolbar_icons" />
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Title" android:textColor="@color/primary_text" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="TITLE" />
+    <View android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+</LinearLayout>

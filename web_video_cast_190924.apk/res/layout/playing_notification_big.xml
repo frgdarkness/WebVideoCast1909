@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/playingNotificationLayout" android:background="@color/white" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="110.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/playingNotificationImage" android:layout_width="@dimen/notification_image_size_big" android:layout_height="fill_parent" android:src="@drawable/notification_thumbnail_large" android:scaleType="centerCrop" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip">
+            <TextView android:id="@id/playingNotificationTitle" android:text="Movie Title" style="@style/notification_title_style" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/playingNotificationDismiss" android:clickable="true" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/ic_close_24px" android:scaleType="center" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/playingNotificationButtonsLayout" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="12.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <ImageView android:id="@id/playingNotificationRewindButton" android:src="@drawable/ic_fast_rewind_black_24px" android:text="@string/button_label_rewind" android:contentDescription="@string/button_label_rewind" style="@style/playback_notification_control_buttons" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/rewind_space" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <ImageView android:id="@id/playingNotificationBkwButton" android:src="@drawable/ic_replay_black_24px" android:text="@string/button_label_jump_back" android:contentDescription="@string/button_label_jump_back" style="@style/playback_notification_control_buttons" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/jump_back_space" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <ImageView android:id="@id/playingNotificationPlayButton" android:src="@drawable/ic_play_arrow_black_24px" android:text="@string/button_label_play_pause" android:contentDescription="@string/button_label_play_pause" style="@style/playback_notification_control_buttons" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <ImageView android:id="@id/playingNotificationFwdButton" android:src="@drawable/ic_replay_black_24px" android:text="@string/button_label_skip_forward" android:contentDescription="@string/button_label_skip_forward" android:scaleX="-1.0" style="@style/playback_notification_control_buttons" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/jump_forward_space" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <ImageView android:id="@id/playingNotificationFastFwdButton" android:src="@drawable/ic_fast_forward_black_24px" android:text="@string/button_label_fast_forward" android:contentDescription="@string/button_label_fast_forward" style="@style/playback_notification_control_buttons" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/fast_forward_space" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

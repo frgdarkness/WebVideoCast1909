@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference android:icon="@null" android:title="@string/image_controller_gesture_next_previous_via_swipe_settings_title" android:key="@string/pref_image_controller_gesture_next_previous_via_swipe" android:summary="@string/image_controller_gesture_next_previous_via_swipe_settings_summary" android:defaultValue="true" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+</PreferenceScreen>

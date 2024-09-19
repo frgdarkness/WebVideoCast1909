@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:layout_width="232.0dip" android:layout_height="172.0dip" android:src="@drawable/battery_warning_illus" android:scaleType="center" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/secondary_text" android:id="@id/after_idle_mode_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/battery_optimization_warning_line_1" android:lineSpacingExtra="3.0dip" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/primary_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/battery_optimization_warning_line_2" android:lineSpacingExtra="3.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/videoTutorialButton" android:background="@drawable/ripple_rect" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/wvc_blue" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/view_instructions" android:layout_weight="1.0" android:fontFamily="@string/font_family_medium" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="48.0dip" android:layout_height="48.0dip" android:scaleType="center" app:srcCompat="@drawable/ic_play_circle_filled_black_24dp" app:tint="@color/wvc_blue" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/videoTutorial" android:visibility="gone" android:layout_width="480.0dip" android:layout_height="280.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" />
+</LinearLayout>

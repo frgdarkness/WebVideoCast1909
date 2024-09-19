@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/fill_name_with_media_name" android:title="@string/subtitles_fill_name_with_media_title" android:checkable="true" />
+    <item android:id="@id/remember_last_used" android:title="@string/subtitles_remember_searches" android:checkable="true" />
+</menu>

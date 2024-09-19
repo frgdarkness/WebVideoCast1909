@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:minHeight="?actionBarSize" android:backgroundTint="@color/toolbar_color" app:popupTheme="@style/AppTheme.PopupOverlay">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nav_title_bookmarks" android:layout_weight="1.0" style="@style/ToolbarTitle" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/window_background" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <ListView android:id="@id/bookmark_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_above="@id/mini_controller" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/bookmarks_empty" android:background="@color/empty_view_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_above="@id/mini_controller">
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:background="@drawable/circle_background_white_or_gray" android:layout_width="164.0dip" android:layout_height="164.0dip">
+                    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="72.0dip" android:layout_height="72.0dip" android:scaleType="fitXY" android:tint="@color/secondary_text" app:srcCompat="@drawable/ic_bookmark_24dp" />
+                    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/primary_text" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/bookmark_list_empty_message" android:lineSpacingExtra="4.0dip" android:alpha="0.54" />
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/primary_text" android:layout_gravity="center_horizontal" android:id="@id/bookmark_search_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/bookmark_search_empty_message" android:layout_weight="1.0" android:lineSpacingExtra="4.0dip" android:alpha="0.54" />
+            <com.instantbits.cast.util.connectsdkhelper.ui.MiniController android:id="@id/mini_controller" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:id="@id/ad_layout" style="@style/bottom_banner_ad" />
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <include layout="@layout/nav_drawer_items" />
+</androidx.drawerlayout.widget.DrawerLayout>

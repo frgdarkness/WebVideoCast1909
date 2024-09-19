@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/default_dialog_background" android:layout_width="280.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/dialog_header_blue" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+            <RelativeLayout android:layout_width="32.0dip" android:layout_height="32.0dip">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:tint="@color/color_white" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_warning_24dp" />
+            </RelativeLayout>
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/javascript_dialog_warning" android:lineSpacingExtra="5.0dip" android:alpha="0.87" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatCheckBox android:gravity="center|left" android:id="@id/block_future_js_dialogs" android:layout_width="32.0dip" android:layout_height="32.0dip" android:buttonTint="@color/color_white" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_white" android:id="@id/block_future_js_dialogs_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/javascript_block_checkbox" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="11.0dip">
+        <View android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="22.0dip" android:layout_height="11.0dip" android:scaleType="fitXY" android:tint="@color/dialog_header_blue" app:srcCompat="@drawable/triangle" />
+        <View android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/javascript_dialog_content" android:paddingLeft="24.0dip" android:paddingTop="13.0dip" android:paddingRight="24.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginBottom="8.0dip">
+        <View android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <androidx.appcompat.widget.AppCompatButton android:textSize="14.0sp" android:textColor="@color/color_accent" android:id="@id/javascript_dialog_left_button" android:background="@drawable/ripple_rect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_dialog_button" />
+        <androidx.appcompat.widget.AppCompatButton android:textSize="14.0sp" android:textColor="@color/color_accent" android:id="@id/javascript_dialog_right_button" android:background="@drawable/ripple_rect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/ok_dialog_button" />
+    </LinearLayout>
+</LinearLayout>

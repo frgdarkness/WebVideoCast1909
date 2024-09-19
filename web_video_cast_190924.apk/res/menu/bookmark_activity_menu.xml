@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_search_black_24dp" android:id="@id/menu_item_search" android:title="@string/bookmark_search_title" app:actionViewClass="androidx.appcompat.widget.SearchView" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_add_bookmark_24px" android:id="@id/add_bookmark" android:title="@string/add_bookmark_button_label" app:showAsAction="always" />
+</menu>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference android:icon="@null" android:title="@string/prior_to_casting_casting_pref_category" android:iconSpaceReserved="false" app:fragment="com.instantbits.cast.webvideo.settings.SettingsCastingDialogsFragment" app:iconSpaceReserved="false" />
+    <Preference android:icon="@null" android:title="@string/while_casting_casting_pref_category" android:iconSpaceReserved="false" app:fragment="com.instantbits.cast.webvideo.settings.SettingsCastingMediaControlFragment" app:iconSpaceReserved="false" />
+    <Preference android:icon="@null" android:title="@string/subtitles_casting_pref_category" android:iconSpaceReserved="false" app:fragment="com.instantbits.cast.webvideo.settings.SettingsCastingSubtitlesFragment" app:iconSpaceReserved="false" />
+    <Preference android:icon="@null" android:title="@string/other_casting_pref_category" android:iconSpaceReserved="false" app:fragment="com.instantbits.cast.webvideo.settings.SettingsCastingOtherFragment" app:iconSpaceReserved="false" />
+</PreferenceScreen>

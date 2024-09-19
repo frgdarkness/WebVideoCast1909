@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/allow_background_play" android:checked="true" android:title="@string/allow_background_play" android:checkable="true" app:showAsAction="never" />
+    <item android:id="@id/mute_always" android:title="@string/in_app_player_always_mute_settings_title" android:checkable="true" />
+    <item android:id="@id/always_repeat_playlists" android:title="@string/in_app_player_repeat_playlists_always_settings_title" android:checkable="true" />
+    <item android:id="@id/gesture_playback_via_double_tap" android:title="@string/in_app_player_gesture_playback_via_double_tap_settings_title" android:checkable="true" />
+    <item android:id="@id/gesture_skip_via_swipe" android:title="@string/in_app_player_gesture_skip_via_swipe_settings_title" android:checkable="true" />
+    <item android:id="@id/gesture_brightness_via_swipe" android:title="@string/in_app_player_gesture_brightness_via_swipe_settings_title" android:checkable="true" />
+    <item android:id="@id/gesture_volume_via_swipe" android:title="@string/in_app_player_gesture_volume_via_swipe_settings_title" android:checkable="true" />
+    <item android:id="@id/volume_boost_allowed" android:title="@string/in_app_player_volume_boost_allowed_settings_title" android:checkable="true" />
+    <item android:id="@id/volume_reset_before_playback" android:title="@string/in_app_player_volume_reset_before_playback_settings_title" android:checkable="true" />
+</menu>

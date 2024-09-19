@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference android:icon="@null" android:title="@string/in_app_player_always_use_settings_title" android:key="@string/pref_in_app_player_always_use" android:summary="@string/in_app_player_always_use_settings_description" android:defaultValue="false" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+    <CheckBoxPreference android:icon="@null" android:title="@string/in_app_player_always_mute_settings_title" android:key="@string/pref_in_app_player_always_mute" android:summary="@string/in_app_player_always_mute_settings_description" android:defaultValue="false" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+    <CheckBoxPreference android:icon="@null" android:title="@string/in_app_player_repeat_playlists_always_settings_title" android:key="@string/pref_in_app_player_repeat_playlists_always" android:summary="@string/in_app_player_repeat_playlists_always_settings_description" android:defaultValue="false" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+    <CheckBoxPreference android:icon="@null" android:title="@string/in_app_player_back_exits_always_settings_title" android:key="@string/pref_in_app_player_back_exits_always" android:summary="@string/in_app_player_back_exits_always_settings_description" android:defaultValue="false" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+    <CheckBoxPreference android:icon="@null" android:title="@string/in_app_player_volume_boost_allowed_settings_title" android:key="@string/pref_in_app_player_volume_boost_allowed" android:summary="@string/in_app_player_volume_boost_allowed_settings_description" android:defaultValue="false" app:iconSpaceReserved="false" app:singleLineTitle="false" />
+    <Preference android:icon="@null" android:title="@string/in_app_player_gestures_settings_title" android:key="gesturesScreen" app:fragment="com.instantbits.cast.webvideo.settings.SettingsInAppPlayerGesturesFragment" app:iconSpaceReserved="false" />
+</PreferenceScreen>

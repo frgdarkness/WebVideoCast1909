@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/preferTVAppOptions" android:checkableBehavior="single">
+        <item android:id="@id/tvAppPrefer" android:title="@string/always_prefer_tv_app" />
+        <item android:id="@id/tvAppPrompt" android:title="@string/prompt_tv_app" />
+        <item android:id="@id/tvAppNever" android:title="@string/never_tv_app" />
+    </group>
+</menu>

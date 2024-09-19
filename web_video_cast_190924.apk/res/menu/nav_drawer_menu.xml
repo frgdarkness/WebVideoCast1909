@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_language_24dp" android:id="@id/nav_browser" android:title="@string/nav_title_browser" />
+        <item android:icon="@drawable/ic_local_videos" android:id="@id/nav_local_media" android:title="@string/nav_title_local_media_phone" />
+        <item android:icon="@drawable/ic_tv_black_24dp" android:id="@id/nav_iptv" android:title="@string/nav_title_iptv" />
+        <item android:icon="@drawable/ic_played_media_24px" android:id="@id/nav_played_media" android:title="@string/nav_title_recent_media" />
+        <item android:icon="@drawable/ic_playlist_play_black_24dp" android:id="@id/nav_playlist" android:title="@string/nav_title_playlist" />
+        <item android:icon="@drawable/ic_bookmark_24dp" android:id="@id/nav_bookmarks" android:title="@string/nav_title_bookmarks" />
+        <item android:icon="@drawable/ic_history_black_24dp" android:id="@id/nav_history" android:title="@string/nav_title_browser_history" />
+        <item android:icon="@drawable/ic_star_black_24dp" android:id="@id/nav_most_visited" android:title="@string/nav_title_most_visited" />
+        <item android:icon="@drawable/ic_file_download_black_24dp" android:id="@id/nav_downloads" android:title="@string/nav_title_download_manager" />
+        <item android:icon="@drawable/ic_help_black_24dp" android:id="@id/nav_faq" android:title="@string/nav_title_faq" />
+        <item android:icon="@drawable/ic_info_black_24dp" android:id="@id/nav_about" android:title="@string/nav_title_about" />
+    </group>
+    <group android:id="@id/settings_group" android:checkableBehavior="none">
+        <item android:icon="@drawable/ic_dark_mode" android:id="@id/darkMode" android:title="@string/nav_dark_mode" />
+        <item android:icon="@drawable/ic_settings_backup_restore_24dp" android:id="@id/nav_backup_restore" android:title="@string/nav_title_backup_restore_data" />
+        <item android:icon="@drawable/ic_settings_24dp" android:id="@id/nav_settings" android:title="@string/nav_title_settings" />
+        <item android:icon="@drawable/ic_exit_to_app_black_24dp" android:id="@id/nav_exit" android:title="@string/exit" />
+        <item android:icon="@drawable/ic_delete_forever_black_24dp" android:id="@id/nav_exit_and_clear" android:title="@string/exit_and_clear" />
+    </group>
+    <group android:checkableBehavior="none">
+        <item android:icon="@null" android:id="@id/nav_premium" android:title="@string/nav_title_premium" />
+        <item android:icon="@null" android:id="@id/nav_try_premium" android:title="@string/nav_title_try_premium" />
+        <item android:icon="@null" android:id="@id/nav_tutorial" android:title="@string/nav_title_tutorial" />
+        <item android:icon="@null" android:id="@id/nav_recommend" android:title="@string/nav_title_recommend_app" />
+        <item android:icon="@null" android:id="@id/nav_rate_us" android:title="@string/nav_title_rate_us" />
+        <item android:icon="@null" android:id="@id/nav_whats_new" android:title="@string/nav_title_whats_new" />
+        <item android:icon="@null" android:id="@id/nav_community" android:title="@string/nav_title_community" />
+        <item android:icon="@null" android:id="@id/nav_beta" android:title="@string/nav_title_beta" />
+        <item android:icon="@null" android:id="@id/nav_kodi" android:title="Kodi" />
+        <item android:icon="@null" android:id="@id/nav_privacy_policy" android:title="@string/nav_title_privacy_policy" />
+    </group>
+</menu>

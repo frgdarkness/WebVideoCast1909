@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bookmark_feature_title">Žymės</string>
+    <string name="dark_mode_strategy_for_web_pages_dialog_label">Tamsiojo režimo strategija svetainėms</string>
+    <string name="gdpr_dialog_implete_error_title">Klaida</string>
+    <string name="generic_error_dialog_title">Klaida</string>
+    <string name="install_button">Įdiegti</string>
+    <string name="password_input_title">Slaptažodis</string>
+    <string name="remove_item">Pašalinti</string>
+    <string name="subtitles_progress_dialog_generic_content">Prašome palaukti</string>
+    <string name="subtitles_progress_dialog_generic_title">Prašome palaukti</string>
+    <string name="tap_to_open_blocked_redirect_bar_button">Palieskite, kad atidarytumėte</string>
+    <string name="username_input_password">Naudotojo vardas</string>
+</resources>

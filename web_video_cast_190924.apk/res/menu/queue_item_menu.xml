@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/cast_queue_without_start" android:title="@string/cast_queue_item_without_start" />
+    <item android:id="@id/play_queue_without_start" android:title="@string/play_queue_item_without_start" />
+    <item android:id="@id/download" android:title="@string/download_video_menu_item" />
+    <item android:id="@id/open_web_page" android:title="@string/open_web_page_menu_item" />
+    <item android:id="@id/open_with" android:title="@string/open_with_menu_item" />
+    <item android:id="@id/rename_video" android:title="@string/rename_item" />
+    <item android:id="@id/remove_queue_item" android:title="@string/remove_queue_item" />
+</menu>
