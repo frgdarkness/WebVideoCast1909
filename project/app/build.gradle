@@ -3,7 +3,8 @@ plugins {
 }
 
 //E:\workspace\ZeroTeam\mod_app\web_video_cast_5.10.8\190924\web_video_cast_190924.apk
-def projectPath = "E:/workspace/ZeroTeam/mod_app/web_video_cast_5.10.8/190924/web_video_cast_190924.apk"
+//D:\work\android\mod_app\190924\web_video_cast_190924.apk
+def projectPath = "D:/work/android/mod_app/190924/web_video_cast_190924.apk"
 
 //def projectPath = "E:/workspace/ZeroTeam/mod_app/web_video_cast_5.10.8/ver3/web_video_cast_ver3.apk"
 
