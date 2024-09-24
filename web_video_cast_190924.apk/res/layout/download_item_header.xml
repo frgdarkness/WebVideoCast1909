@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="@dimen/downloads_item_left_margin"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/wvc_blue" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/download_header" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="Completed" android:fontFamily="@string/font_family_medium" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48.0dip"
+    android:layout_marginLeft="@dimen/downloads_item_left_margin"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@id/download_header"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@string/font_family_medium"
+        android:gravity="center_vertical"
+        android:text="Completed"
+        android:textColor="@color/wvc_blue"
+        android:textSize="14.0sp" />
 </LinearLayout>

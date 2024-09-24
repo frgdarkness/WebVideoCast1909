@@ -1,220 +1,634 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content">
-            <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:minHeight="?actionBarSize" android:backgroundTint="@color/toolbar_color" app:popupTheme="@style/AppTheme.PopupOverlay">
-                <LinearLayout android:orientation="horizontal" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
-                    <TextView android:textColor="@color/primary_text" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nav_title_about" android:layout_weight="1.0" style="@style/ToolbarTitle" />
-                    <com.instantbits.android.utils.widgets.CheckableImageButton android:id="@id/castIcon" android:contentDescription="@string/button_label_cast" app:srcCompat="@drawable/cast_icon" style="@style/toolbar_icons" />
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/drawer_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@id/coordinator"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="false">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@id/toolbar"
+                android:layout_width="fill_parent"
+                android:layout_height="?actionBarSize"
+                android:background="?colorPrimary"
+                android:backgroundTint="@color/toolbar_color"
+                android:minHeight="?actionBarSize"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:paddingRight="4.0dip">
+
+                    <TextView
+                        style="@style/ToolbarTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:text="@string/nav_title_about"
+                        android:textColor="@color/primary_text" />
+
+                    <com.instantbits.android.utils.widgets.CheckableImageButton
+                        android:id="@id/castIcon"
+                        style="@style/toolbar_icons"
+                        android:contentDescription="@string/button_label_cast"
+                        app:srcCompat="@drawable/cast_icon" />
                 </LinearLayout>
             </androidx.appcompat.widget.Toolbar>
         </com.google.android.material.appbar.AppBarLayout>
-        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
-            <androidx.core.widget.NestedScrollView android:id="@id/scroll" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_weight="1.0">
-                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@id/scroll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:descendantFocusability="beforeDescendants"
+                android:fillViewport="true"
+                android:focusableInTouchMode="true">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
                     <LinearLayout style="@style/about_wrapper_for_tablets">
-                        <androidx.appcompat.widget.AppCompatTextView android:layout_marginTop="16.0dip" android:text="@string/about_title_developed_by" style="@style/about_header" />
-                        <androidx.appcompat.widget.AppCompatTextView android:textSize="32.0sp" android:textColor="@color/primary_text" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="InstantBits Inc." android:alpha="0.87" />
-                        <androidx.appcompat.widget.AppCompatTextView android:layout_marginTop="20.0dip" android:text="@string/about_title_designed_by" style="@style/about_header" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/about_header"
+                            android:layout_marginTop="16.0dip"
+                            android:text="@string/about_title_developed_by" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:alpha="0.87"
+                            android:text="InstantBits Inc."
+                            android:textColor="@color/primary_text"
+                            android:textSize="32.0sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/about_header"
+                            android:layout_marginTop="20.0dip"
+                            android:text="@string/about_title_designed_by" />
+
                         <LinearLayout style="@style/about_credit_row">
+
                             <LinearLayout style="@style/about_credit_name_and_title">
-                                <androidx.appcompat.widget.AppCompatTextView android:text="Michael Cook" style="@style/about_credit_name" />
-                                <androidx.appcompat.widget.AppCompatTextView android:text="Papermill Collective" style="@style/about_credit_title" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    style="@style/about_credit_name"
+                                    android:text="Michael Cook" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    style="@style/about_credit_title"
+                                    android:text="Papermill Collective" />
                             </LinearLayout>
-                            <androidx.appcompat.widget.AppCompatImageView android:id="@id/about_link_designer" android:visibility="gone" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@id/about_link_designer"
+                                style="@style/about_credit_link"
+                                android:visibility="gone"
+                                app:srcCompat="@drawable/my_icon_open_in_new" />
                         </LinearLayout>
-                        <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_title_translations" style="@style/about_header" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/about_header"
+                            android:text="@string/about_title_translations" />
+
                         <LinearLayout style="@style/about_links_layout_with_divider">
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="Michal Škrobák" style="@style/about_credit_name" />
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_language_czech" style="@style/about_credit_title" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="Michal Škrobák" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_title"
+                                        android:text="@string/about_language_czech" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:visibility="gone" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    style="@style/about_credit_link"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="Benji Braun" style="@style/about_credit_name" />
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_language_german" style="@style/about_credit_title" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="Benji Braun" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_title"
+                                        android:text="@string/about_language_german" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:id="@id/about_link_benji" android:visibility="gone" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@id/about_link_benji"
+                                    style="@style/about_credit_link"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="Alex Smogorzhevskiy" style="@style/about_credit_name" />
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_language_russian_and_ukrainian" style="@style/about_credit_title" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="Alex Smogorzhevskiy" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_title"
+                                        android:text="@string/about_language_russian_and_ukrainian" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:id="@id/about_link_alex" android:visibility="gone" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@id/about_link_alex"
+                                    style="@style/about_credit_link"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="Luca Fuchs" style="@style/about_credit_name" />
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_language_german" style="@style/about_credit_title" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="Luca Fuchs" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_title"
+                                        android:text="@string/about_language_german" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:visibility="gone" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    style="@style/about_credit_link"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="Vitalii Demeshkant" style="@style/about_credit_name" />
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_language_ukrainian" style="@style/about_credit_title" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="Vitalii Demeshkant" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_title"
+                                        android:text="@string/about_language_ukrainian" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:visibility="gone" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    style="@style/about_credit_link"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="Rodolfi Elisa" style="@style/about_credit_name" />
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_language_italian" style="@style/about_credit_title" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="Rodolfi Elisa" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_title"
+                                        android:text="@string/about_language_italian" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:id="@id/about_link_rodolfi" android:visibility="gone" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@id/about_link_rodolfi"
+                                    style="@style/about_credit_link"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="Piero Savi" style="@style/about_credit_name" />
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_language_italian" style="@style/about_credit_title" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="Piero Savi" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_title"
+                                        android:text="@string/about_language_italian" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:visibility="gone" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    style="@style/about_credit_link"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="Serkan Başar" style="@style/about_credit_name" />
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_language_turkish" style="@style/about_credit_title" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="Serkan Başar" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_title"
+                                        android:text="@string/about_language_turkish" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:visibility="gone" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    style="@style/about_credit_link"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="Quyền Trương" style="@style/about_credit_name" />
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_language_vietnamese" style="@style/about_credit_title" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="Quyền Trương" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_title"
+                                        android:text="@string/about_language_vietnamese" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:visibility="gone" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    style="@style/about_credit_link"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="István Székely" style="@style/about_credit_name" />
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_language_hungarian" style="@style/about_credit_title" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="István Székely" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_title"
+                                        android:text="@string/about_language_hungarian" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:visibility="gone" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    style="@style/about_credit_link"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="Kostas Vaporidis" style="@style/about_credit_name" />
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_language_greek" style="@style/about_credit_title" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="Kostas Vaporidis" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_title"
+                                        android:text="@string/about_language_greek" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:visibility="gone" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    style="@style/about_credit_link"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="Volkan Acar" style="@style/about_credit_name" />
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_language_turkish" style="@style/about_credit_title" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="Volkan Acar" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_title"
+                                        android:text="@string/about_language_turkish" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:visibility="gone" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    style="@style/about_credit_link"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="肚条" style="@style/about_credit_name" />
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_language_chinese_simplified" style="@style/about_credit_title" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="肚条" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_title"
+                                        android:text="@string/about_language_chinese_simplified" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:visibility="gone" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    style="@style/about_credit_link"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="Ramon Rosin" style="@style/about_credit_name" />
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_language_german" style="@style/about_credit_title" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="Ramon Rosin" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_title"
+                                        android:text="@string/about_language_german" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:id="@id/about_link_ramon_rosin" android:visibility="gone" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@id/about_link_ramon_rosin"
+                                    style="@style/about_credit_link"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="Lucas Vinícius" style="@style/about_credit_name" />
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_language_portuguese" style="@style/about_credit_title" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="Lucas Vinícius" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_title"
+                                        android:text="@string/about_language_portuguese" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:visibility="gone" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    style="@style/about_credit_link"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="Rik Demeyer" style="@style/about_credit_name" />
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_language_dutch" style="@style/about_credit_title" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="Rik Demeyer" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_title"
+                                        android:text="@string/about_language_dutch" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:visibility="gone" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    style="@style/about_credit_link"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="Ogün Baştürk" style="@style/about_credit_name" />
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_language_turkish" style="@style/about_credit_title" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="Ogün Baştürk" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_title"
+                                        android:text="@string/about_language_turkish" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:visibility="gone" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    style="@style/about_credit_link"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="Silvia de la Cruz Ripoll" style="@style/about_credit_name" />
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_language_spanish_catalan" style="@style/about_credit_title" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="Silvia de la Cruz Ripoll" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_title"
+                                        android:text="@string/about_language_spanish_catalan" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:visibility="gone" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    style="@style/about_credit_link"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
                         </LinearLayout>
-                        <androidx.appcompat.widget.AppCompatButton android:textColor="@color/primary_text" android:layout_gravity="center_horizontal" android:id="@id/about_link_help_translate" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip" android:text="@string/about_button_help_translate" app:backgroundTint="@color/color_primary" />
-                        <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_title_subtitles" style="@style/about_header" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@id/about_link_help_translate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48.0dip"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="14.0dip"
+                            android:layout_marginBottom="14.0dip"
+                            android:text="@string/about_button_help_translate"
+                            android:textColor="@color/primary_text"
+                            app:backgroundTint="@color/color_primary" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/about_header"
+                            android:text="@string/about_title_subtitles" />
+
                         <LinearLayout style="@style/about_credit_row">
+
                             <LinearLayout style="@style/about_credit_name_and_title">
-                                <androidx.appcompat.widget.AppCompatTextView android:text="@string/subtitles_provider_name_opensubtitles_com" style="@style/about_credit_name" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    style="@style/about_credit_name"
+                                    android:text="@string/subtitles_provider_name_opensubtitles_com" />
                             </LinearLayout>
-                            <androidx.appcompat.widget.AppCompatImageView android:id="@id/about_link_open_subtitles" android:visibility="gone" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@id/about_link_open_subtitles"
+                                style="@style/about_credit_link"
+                                android:visibility="gone"
+                                app:srcCompat="@drawable/my_icon_open_in_new" />
                         </LinearLayout>
-                        <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_title_open_source" style="@style/about_header" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/about_header"
+                            android:text="@string/about_title_open_source" />
+
                         <LinearLayout style="@style/about_links_layout_with_divider">
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="Glide" style="@style/about_credit_name" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="Glide" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:id="@id/about_link_glide" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@id/about_link_glide"
+                                    style="@style/about_credit_link"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="Material Dialogs" style="@style/about_credit_name" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="Material Dialogs" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:id="@id/about_link_material_dialogs" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@id/about_link_material_dialogs"
+                                    style="@style/about_credit_link"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="AppIntro" style="@style/about_credit_name" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="AppIntro" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:id="@id/about_link_app_intro" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@id/about_link_app_intro"
+                                    style="@style/about_credit_link"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="OkHttp" style="@style/about_credit_name" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="OkHttp" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:id="@id/about_link_okhttp" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@id/about_link_okhttp"
+                                    style="@style/about_credit_link"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
                         </LinearLayout>
-                        <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_title_other_links" style="@style/about_header" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/about_header"
+                            android:text="@string/about_title_other_links" />
+
                         <LinearLayout style="@style/about_links_layout_with_divider">
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_link_privacy_policy" style="@style/about_credit_name" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="@string/about_link_privacy_policy" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:id="@id/about_link_privacy" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@id/about_link_privacy"
+                                    style="@style/about_credit_link"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_link_user_agreement" style="@style/about_credit_name" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="@string/about_link_user_agreement" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:id="@id/about_link_user_agreement" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@id/about_link_user_agreement"
+                                    style="@style/about_credit_link"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
+
                             <LinearLayout style="@style/about_credit_row">
+
                                 <LinearLayout style="@style/about_credit_name_and_title">
-                                    <androidx.appcompat.widget.AppCompatTextView android:text="@string/about_link_send_feedback" style="@style/about_credit_name" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        style="@style/about_credit_name"
+                                        android:text="@string/about_link_send_feedback" />
                                 </LinearLayout>
-                                <androidx.appcompat.widget.AppCompatImageView android:id="@id/about_link_feedback" app:srcCompat="@drawable/ic_launch_black_24dp" style="@style/about_credit_link" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@id/about_link_feedback"
+                                    style="@style/about_credit_link"
+                                    app:srcCompat="@drawable/my_icon_open_in_new" />
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
             </androidx.core.widget.NestedScrollView>
-            <com.instantbits.cast.util.connectsdkhelper.ui.MiniController android:id="@id/mini_controller" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-            <LinearLayout android:id="@id/ad_layout" style="@style/bottom_banner_ad" />
+
+            <com.instantbits.cast.util.connectsdkhelper.ui.MiniController
+                android:id="@id/mini_controller"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@id/ad_layout"
+                style="@style/bottom_banner_ad" />
         </LinearLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
     <include layout="@layout/nav_drawer_items" />
 </androidx.drawerlayout.widget.DrawerLayout>

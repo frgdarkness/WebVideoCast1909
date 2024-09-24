@@ -1,12 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/app_bar_height"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:orientation="vertical" android:id="@id/addressBarAndControls" android:paddingLeft="0.0dip" android:paddingTop="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="12.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true">
-        <com.google.android.material.card.MaterialCardView android:orientation="horizontal" android:id="@id/address_bar_card" android:background="@color/color_white" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="@dimen/address_bar_card_elevation" app:cardBackgroundColor="@color/color_white" app:cardCornerRadius="2.0dip">
-            <LinearLayout android:orientation="horizontal" android:id="@id/addressCardBackground" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
-              xmlns:android="http://schemas.android.com/apk/res/android">
-                <androidx.appcompat.widget.AppCompatAutoCompleteTextView android:textSize="14.0sp" android:textColor="@color/black_87_percent" android:textColorHint="@color/black_54_percent" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/addressBar" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginLeft="8.0dip" android:hint="@string/browse_hint" android:singleLine="true" android:selectAllOnFocus="true" android:popupBackground="@color/popup_menu_background" android:layout_weight="1.0" android:layout_centerVertical="true" android:inputType="textUri" android:dropDownAnchor="@id/toolbar" android:alpha="0.87" />
-                <androidx.appcompat.widget.AppCompatImageView android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/refresh" android:background="@drawable/ripple" android:focusable="true" android:clickable="true" android:layout_width="32.0dip" android:layout_height="32.0dip" android:scaleType="center" android:layout_centerVertical="true" android:contentDescription="@string/button_label_refresh" app:srcCompat="@drawable/ic_refresh_black_24dp" app:tint="@color/primary_text" />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/app_bar_height">
+
+    <LinearLayout
+        android:id="@id/addressBarAndControls"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:paddingLeft="0.0dip"
+        android:paddingTop="12.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingBottom="12.0dip">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@id/address_bar_card"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/color_white"
+            android:clipToPadding="false"
+            android:elevation="@dimen/address_bar_card_elevation"
+            android:orientation="horizontal"
+            app:cardBackgroundColor="@color/color_white"
+            app:cardCornerRadius="2.0dip">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@id/addressCardBackground"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/color_white"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@id/addressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_weight="1.0"
+                    android:alpha="0.87"
+                    android:background="@color/white"
+                    android:dropDownAnchor="@id/toolbar"
+                    android:gravity="center_vertical"
+                    android:hint="@string/browse_hint"
+                    android:inputType="textUri"
+                    android:popupBackground="@color/popup_menu_background"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black_87_percent"
+                    android:textColorHint="@color/black_54_percent"
+                    android:textSize="14.0sp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@id/refresh"
+                    android:layout_width="32.0dip"
+                    android:layout_height="32.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ripple"
+                    android:clickable="true"
+                    android:contentDescription="@string/button_label_refresh"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/ic_refresh_black_24dp"
+                    app:tint="@color/primary_text" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
     </LinearLayout>

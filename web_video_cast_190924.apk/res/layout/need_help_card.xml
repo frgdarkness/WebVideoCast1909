@@ -1,8 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <androidx.appcompat.widget.AppCompatImageView android:id="@id/helpCardClose" android:background="@drawable/ripple" android:focusable="true" android:clickable="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="8.0dip" android:scaleType="centerInside" android:tint="@color/white" app:layout_constraintBottom_toBottomOf="@id/issuesLabel" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/issuesLabel" app:layout_constraintTop_toTopOf="@id/issuesLabel" app:srcCompat="@drawable/ic_close_24dp" />
-    <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/color_white" android:gravity="center" android:id="@id/issuesLabel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:minHeight="56.0dip" android:text="@string/having_issues_label" app:layout_constraintLeft_toRightOf="@id/helpCardClose" app:layout_constraintRight_toLeftOf="@id/issuesHelpButton" app:layout_constraintTop_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    <androidx.appcompat.widget.AppCompatImageView android:id="@id/issuesHelpButton" android:background="@drawable/ripple" android:focusable="true" android:clickable="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="8.0dip" android:scaleType="centerInside" android:tint="@color/white" app:layout_constraintBottom_toBottomOf="@id/issuesLabel" app:layout_constraintLeft_toRightOf="@id/issuesLabel" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/issuesLabel" app:srcCompat="@drawable/ic_email_black_24dp" />
-    <com.google.android.material.button.MaterialButton android:textColor="@color/button_text_on_accent_background" android:id="@id/tutorial_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/watch_tutorial_video_button" android:backgroundTint="@color/color_accent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/helpCardClose" app:layout_constraintRight_toLeftOf="@id/issuesHelpButton" app:layout_constraintTop_toBottomOf="@id/issuesLabel" />
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/issuesHelpButton"
+        android:layout_width="48.0dip"
+        android:layout_height="48.0dip"
+        android:layout_marginLeft="8.0dip"
+        android:background="@drawable/ripple"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="centerInside"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/issuesLabel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/issuesLabel"
+        app:srcCompat="@drawable/my_icon_email" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/issuesLabel"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16.0dip"
+        android:gravity="center"
+        android:minHeight="56.0dip"
+        android:text="@string/having_issues_label"
+        android:textColor="@color/color_white"
+        android:textSize="16.0sp"
+        app:layout_constraintLeft_toRightOf="@id/issuesHelpButton"
+        app:layout_constraintRight_toLeftOf="@id/helpCardClose"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/helpCardClose"
+        android:layout_width="48.0dip"
+        android:layout_height="48.0dip"
+        android:layout_marginLeft="8.0dip"
+        android:background="@drawable/ripple"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="visible"
+        android:scaleType="centerInside"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/issuesLabel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/issuesLabel"
+        app:layout_constraintTop_toTopOf="@id/issuesLabel"
+        app:srcCompat="@drawable/my_icon_close" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tutorial_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8.0dip"
+        app:cornerRadius="12dp"
+        android:backgroundTint="@color/color_accent"
+        android:text="@string/watch_tutorial_video_button"
+        android:textColor="@color/button_text_on_accent_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/helpCardClose"
+        app:layout_constraintRight_toLeftOf="@id/issuesHelpButton"
+        app:layout_constraintTop_toBottomOf="@id/issuesLabel" />
 </androidx.constraintlayout.widget.ConstraintLayout>

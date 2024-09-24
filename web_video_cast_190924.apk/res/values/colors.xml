@@ -119,7 +119,7 @@
     <color name="button_on_window_background">@color/grey_200</color>
     <color name="button_text_on_accent_background">#ff212121</color>
     <color name="card_backgrounds_on_window_background">@color/white</color>
-    <color name="card_blue">@color/blue_900</color>
+
     <color name="card_on_dialog_standout">@color/white</color>
     <color name="cardview_dark_background">#ff424242</color>
     <color name="cardview_light_background">#ffffffff</color>
@@ -146,19 +146,70 @@
     <color name="cast_seekbar_secondary_progress_color">#a6ffffff</color>
     <color name="cast_seekbar_tooltip_background_color">#e6616161</color>
     <color name="cast_seekbar_unseekable_progress_color">#4dffffff</color>
-    <color name="color_accent">@color/amber_500</color>
-    <color name="color_accent_26_percent">#42ffc107</color>
-    <color name="color_accent_dark">@color/amber_700</color>
-    <color name="color_accent_dark_translucent">#78e65100</color>
-    <color name="color_accent_translucent">#78ff9800</color>
-    <color name="color_primary">@color/blue_500</color>
-    <color name="color_primary_87_percent">#dd2196f3</color>
-    <color name="color_primary_dark">@color/blue_700</color>
-    <color name="color_primary_dark_less_translucent">#cc1976d2</color>
-    <color name="color_primary_dark_translucent">#781976d2</color>
-    <color name="color_primary_light">@color/blue_100</color>
-    <color name="color_primary_light_translucent">#78bbdefb</color>
-    <color name="color_primary_translucent">#785677fc</color>
+
+
+
+<!--    <color name="color_accent">@color/amber_500</color>-->
+<!--    <color name="color_accent_26_percent">#42ffc107</color>-->
+<!--    <color name="color_accent_dark">@color/amber_700</color>-->
+<!--    <color name="color_accent_dark_translucent">#78e65100</color>-->
+<!--    <color name="color_accent_translucent">#78ff9800</color>-->
+<!--    <color name="color_primary">@color/blue_500</color>-->
+<!--    <color name="color_primary_87_percent">#dd2196f3</color>-->
+<!--    <color name="color_primary_dark">@color/blue_700</color>-->
+<!--    <color name="color_primary_dark_less_translucent">#cc1976d2</color>-->
+<!--    <color name="color_primary_dark_translucent">#781976d2</color>-->
+<!--    <color name="color_primary_light">@color/blue_100</color>-->
+<!--    <color name="color_primary_light_translucent">#78bbdefb</color>-->
+<!--    <color name="color_primary_translucent">#785677fc</color>-->
+
+<!--    color ver1  -->
+<!--    <color name="color_accent">@color/blue_500</color> &lt;!&ndash; Secondary color (blue) &ndash;&gt;-->
+<!--    <color name="color_accent_26_percent">#422196f3</color> &lt;!&ndash; 26% opacity of blue &ndash;&gt;-->
+<!--    <color name="color_accent_dark">@color/blue_700</color> &lt;!&ndash; Darker shade of secondary color &ndash;&gt;-->
+<!--    <color name="color_accent_dark_translucent">#781976d2</color> &lt;!&ndash; Dark translucent secondary &ndash;&gt;-->
+<!--    <color name="color_accent_translucent">#781976d2</color> &lt;!&ndash; Translucent secondary &ndash;&gt;-->
+<!--    <color name="color_primary">#FFB300</color> &lt;!&ndash; Primary color (darker yellow) &ndash;&gt;-->
+<!--    <color name="color_primary_87_percent">#ddffb300</color> &lt;!&ndash; 87% opacity of darker yellow &ndash;&gt;-->
+<!--    <color name="color_primary_dark">#FFA000</color> &lt;!&ndash; Darker shade of primary yellow &ndash;&gt;-->
+<!--    <color name="color_primary_dark_less_translucent">#ccff8f00</color> &lt;!&ndash; Less translucent dark yellow &ndash;&gt;-->
+<!--    <color name="color_primary_dark_translucent">#78ff8f00</color> &lt;!&ndash; Translucent dark yellow &ndash;&gt;-->
+<!--    <color name="color_primary_light">#FFE082</color> &lt;!&ndash; Lighter shade of primary yellow &ndash;&gt;-->
+<!--    <color name="color_primary_light_translucent">#78ffecb3</color> &lt;!&ndash; Translucent light yellow &ndash;&gt;-->
+<!--    <color name="color_primary_translucent">#78ffd54f</color> &lt;!&ndash; Translucent yellow &ndash;&gt;-->
+
+<!--    color ver2  -->
+<!--    <color name="color_accent">#03DAC6</color>-->
+<!--    <color name="color_accent_26_percent">#4203DAC6</color>-->
+<!--    <color name="color_accent_dark">#018786</color>-->
+<!--    <color name="color_accent_dark_translucent">#78018786</color>-->
+<!--    <color name="color_accent_translucent">#7803DAC6</color>-->
+<!--    <color name="color_primary">#6200ee</color>-->
+<!--    <color name="color_primary_87_percent">#6200ee</color>-->
+<!--    <color name="color_primary_dark">#3700b3</color>-->
+<!--    <color name="color_primary_dark_less_translucent">#cc3700b3</color>-->
+<!--    <color name="color_primary_dark_translucent">#783700b3</color>-->
+<!--    <color name="color_primary_light">#D1C4E9</color>-->
+<!--    <color name="color_primary_light_translucent">#78D1C4E9</color>-->
+<!--    <color name="color_primary_translucent">#786200ee</color>    -->
+
+
+    <color name="color_accent">#03DAC6</color>
+    <color name="color_accent_26_percent">#4203DAC6</color>
+    <color name="color_accent_dark">#018786</color>
+    <color name="color_accent_dark_translucent">#78018786</color>
+    <color name="color_accent_translucent">#7803DAC6</color>
+    <color name="color_primary">#90A4AE</color> <!-- Primary color sáng hơn nữa -->
+    <color name="color_primary_87_percent">#dd90A4AE</color> <!-- 87% opacity of brighter primary -->
+    <color name="color_primary_dark">#607D8B</color> <!-- Darker shade of primary -->
+    <color name="color_primary_dark_less_translucent">#cc607D8B</color> <!-- Less translucent dark primary -->
+    <color name="color_primary_dark_translucent">#78607D8B</color> <!-- Translucent dark primary -->
+    <color name="color_primary_light">#ECEFF1</color> <!-- Lighter shade of primary -->
+    <color name="color_primary_light_translucent">#78ECEFF1</color> <!-- Translucent light primary -->
+    <color name="color_primary_translucent">#7890A4AE</color>
+    <color name="card_blue">#546E7A</color>
+
+    <!--    <color name="card_blue">@color/blue_900</color>-->
     <color name="color_white">#ffffffff</color>
     <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
     <color name="common_google_signin_btn_text_dark_disabled">#1f000000</color>

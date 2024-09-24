@@ -1,10 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/ripple_rect"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/device_selected" android:layout_width="48.0dip" android:layout_height="48.0dip" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    <ImageView android:id="@id/device_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:layout_marginTop="48.0dip" android:layout_marginRight="48.0dip" android:layout_marginBottom="24.0dip" android:scaleType="center" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/primary_text" android:id="@id/device_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="24.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/device_image" />
-    <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/secondary_text" android:id="@id/device_description" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/device_title" app:layout_goneMarginBottom="8.0dip" />
-    <androidx.appcompat.widget.AppCompatButton android:textColor="@color/wvc_blue" android:gravity="center" android:id="@id/device_add_ip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="48.0dip" android:text="@string/add_ip_button_text" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/device_description" style="@style/Base.Widget.AppCompat.Button.Borderless" />
-    <View android:id="@id/bottom_line" android:background="@color/black_12_percent" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/device_add_ip" />
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="@drawable/ripple_rect">
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@id/device_selected"
+        android:layout_width="48.0dip"
+        android:layout_height="48.0dip"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@id/device_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48.0dip"
+        android:layout_marginTop="48.0dip"
+        android:layout_marginRight="48.0dip"
+        android:layout_marginBottom="24.0dip"
+        android:scaleType="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@id/device_title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24.0dip"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginRight="24.0dip"
+        android:textColor="@color/primary_text"
+        android:textSize="14.0sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/device_image" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@id/device_description"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24.0dip"
+        android:layout_marginRight="24.0dip"
+        android:textColor="@color/secondary_text"
+        android:textSize="14.0sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/device_title"
+        app:layout_goneMarginBottom="8.0dip" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@id/device_add_ip"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="48.0dip"
+        android:gravity="center"
+        android:text="@string/add_ip_button_text"
+        android:textColor="@color/wvc_blue"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/device_description" />
+
+    <View
+        android:id="@id/bottom_line"
+        android:layout_width="0.0dip"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="8.0dip"
+        android:background="@color/black_12_percent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/device_add_ip" />
 </androidx.constraintlayout.widget.ConstraintLayout>

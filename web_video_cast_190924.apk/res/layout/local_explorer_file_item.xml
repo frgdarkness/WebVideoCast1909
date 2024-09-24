@@ -1,14 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/explorer_item_left_margin"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:orientation="horizontal" android:id="@id/explorer_item_layout" android:background="@drawable/ripple_rect" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/more_button_layout" android:layout_alignParentLeft="true">
-        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/videoPoster" android:layout_width="@dimen/explorer_poster_size" android:layout_height="@dimen/explorer_poster_size" android:layout_marginTop="@dimen/explorer_poster_margin" android:layout_marginBottom="@dimen/explorer_poster_margin" android:scaleType="centerCrop" app:srcCompat="@drawable/video_placeholder" />
-        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="@dimen/explorer_poster_margin" android:layout_marginBottom="@dimen/explorer_poster_margin">
-            <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/primary_text" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/videoTitle" android:layout_width="wrap_content" android:layout_height="24.0dip" android:text="Video title" android:maxLines="1" android:singleLine="true" android:alpha="0.87" />
-            <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/secondary_text" android:id="@id/recentProgress" android:layout_width="wrap_content" android:layout_height="24.0dip" android:text="video progress" android:singleLine="true" android:alpha="0.54" />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/explorer_item_left_margin"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@id/explorer_item_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/more_button_layout"
+        android:background="@drawable/ripple_rect"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@id/videoPoster"
+            android:layout_width="@dimen/explorer_poster_size"
+            android:layout_height="@dimen/explorer_poster_size"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/explorer_poster_margin"
+            android:layout_marginBottom="@dimen/explorer_poster_margin"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/video_placeholder" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginTop="@dimen/explorer_poster_margin"
+            android:layout_marginBottom="@dimen/explorer_poster_margin"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@id/videoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="24.0dip"
+                android:layout_gravity="center_vertical"
+                android:alpha="0.87"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Video title"
+                android:textColor="@color/primary_text"
+                android:textSize="16.0sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@id/recentProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="24.0dip"
+                android:alpha="0.54"
+                android:singleLine="true"
+                android:text="video progress"
+                android:textColor="@color/secondary_text"
+                android:textSize="14.0sp" />
         </LinearLayout>
     </LinearLayout>
-    <LinearLayout android:id="@id/more_button_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
-        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="top" android:id="@id/explorerItemMore" android:background="@drawable/ripple" android:focusable="true" android:clickable="true" android:layout_width="@dimen/overflow_dots_in_list_item" android:layout_height="@dimen/overflow_dots_in_list_item" android:layout_marginRight="@dimen/overflow_dots_in_list_item_right_margin" android:scaleType="center" android:tint="@color/primary_text" android:alpha="0.54" app:srcCompat="@drawable/ic_more_vert_24dp" />
+
+    <LinearLayout
+        android:id="@id/more_button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@id/explorerItemMore"
+            android:layout_width="@dimen/overflow_dots_in_list_item"
+            android:layout_height="@dimen/overflow_dots_in_list_item"
+            android:layout_gravity="top"
+            android:layout_marginRight="@dimen/overflow_dots_in_list_item_right_margin"
+            android:alpha="0.54"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="center"
+            android:tint="@color/primary_text"
+            app:srcCompat="@drawable/ic_more_vert_24dp" />
     </LinearLayout>
 </RelativeLayout>
