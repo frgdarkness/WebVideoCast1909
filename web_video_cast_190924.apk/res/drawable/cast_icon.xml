@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_enabled="true" android:state_checked="true" android:drawable="@drawable/ic_cast_connected_24dp" />
+    <item android:state_enabled="true" android:state_checked="true" android:drawable="@drawable/my_icon_cast_connected" />
     <item android:state_enabled="true" android:state_checkable="true" android:drawable="@drawable/cast_icon_animation" />
-    <item android:state_enabled="true" android:drawable="@drawable/ic_cast_24dp" />
-    <item android:drawable="@drawable/ic_cast_24dp" />
+    <item android:state_enabled="true" android:drawable="@drawable/my_icon_cast" />
+    <item android:drawable="@drawable/my_icon_cast" />
 </selector>

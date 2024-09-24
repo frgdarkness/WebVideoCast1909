@@ -1,32 +1,246 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/default_dialog_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:orientation="vertical" android:background="@color/dialog_header_blue" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <androidx.appcompat.widget.AppCompatTextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/connect_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="24.0dip" android:text="@string/connect_dialog_title" android:lineSpacingExtra="2.0dip" android:fontFamily="@string/font_family_medium" />
-        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginBottom="16.0dip">
-            <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/scanning_for_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/scanning_for_label_on_connect_dialog" android:lineSpacingExtra="4.0dip" android:fontFamily="@string/font_family_medium" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/change_scan" app:layout_constraintTop_toTopOf="parent" />
-            <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/white_87_percent" android:id="@id/scanning_protocols" android:layout_width="0.0dip" android:layout_height="wrap_content" android:lineSpacingExtra="1.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/change_scan" app:layout_constraintTop_toBottomOf="@id/scanning_for_label" />
-            <androidx.appcompat.widget.AppCompatImageView android:id="@id/change_scan" android:background="@drawable/ripple" android:focusable="true" android:clickable="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="-4.0dip" android:scaleType="center" android:tint="@color/white" android:contentDescription="@string/button_label_choose_services" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_settings_black_24dp" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/default_dialog_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dialog_header_blue"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@id/connect_dialog_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24.0dip"
+            android:layout_marginTop="24.0dip"
+            android:layout_marginRight="24.0dip"
+            android:fontFamily="@string/font_family_medium"
+            android:lineSpacingExtra="2.0dip"
+            android:text="@string/connect_dialog_title"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24.0dip"
+            android:layout_marginBottom="16.0dip">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@id/scanning_for_label"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.0dip"
+                android:fontFamily="@string/font_family_medium"
+                android:lineSpacingExtra="4.0dip"
+                android:text="@string/scanning_for_label_on_connect_dialog"
+                android:textColor="@color/white"
+                android:textSize="16.0sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/change_scan"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@id/scanning_protocols"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="1.0dip"
+                android:textColor="@color/white_87_percent"
+                android:textSize="14.0sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/change_scan"
+                app:layout_constraintTop_toBottomOf="@id/scanning_for_label" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@id/change_scan"
+                android:layout_width="48.0dip"
+                android:layout_height="48.0dip"
+                android:layout_marginTop="-4.0dip"
+                android:background="@drawable/ripple"
+                android:clickable="true"
+                android:contentDescription="@string/button_label_choose_services"
+                android:focusable="true"
+                android:scaleType="center"
+                android:tint="@color/white"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/my_icon_setting" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
-    <LinearLayout android:orientation="vertical" android:id="@id/vpn_warning_connect_dialog" android:background="@color/dialog_header_red" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
-            <com.google.android.material.textview.MaterialTextView android:textSize="12.0sp" android:textColor="@color/white_87_percent" android:textColorLink="@color/white_87_percent" android:id="@id/vpn_warning_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:text="@string/vpn_warning_connect_dialog" android:layout_weight="1.0" android:lineSpacingExtra="1.0dip" />
-            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/vpn_warning_close" android:background="@drawable/ripple" android:focusable="true" android:clickable="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="8.0dip" android:scaleType="centerInside" android:tint="@color/white" app:layout_constraintBottom_toBottomOf="@id/issuesLabel" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/issuesLabel" app:layout_constraintTop_toTopOf="@id/issuesLabel" app:srcCompat="@drawable/ic_clear_black_24dp" />
+
+    <LinearLayout
+        android:id="@id/vpn_warning_connect_dialog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dialog_header_red"
+        android:orientation="vertical"
+        android:paddingTop="8.0dip"
+        android:paddingBottom="8.0dip"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@id/vpn_warning_text"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24.0dip"
+                android:layout_marginRight="24.0dip"
+                android:layout_weight="1.0"
+                android:lineSpacingExtra="1.0dip"
+                android:text="@string/vpn_warning_connect_dialog"
+                android:textColor="@color/white_87_percent"
+                android:textColorLink="@color/white_87_percent"
+                android:textSize="12.0sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@id/vpn_warning_close"
+                android:layout_width="48.0dip"
+                android:layout_height="48.0dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8.0dip"
+                android:background="@drawable/ripple"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="centerInside"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/issuesLabel"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/issuesLabel"
+                app:layout_constraintTop_toTopOf="@id/issuesLabel"
+                app:srcCompat="@drawable/ic_clear_black_24dp" />
         </androidx.appcompat.widget.LinearLayoutCompat>
     </LinearLayout>
-    <LinearLayout android:orientation="vertical" android:id="@id/bad_ip_list_connect_dialog" android:background="@color/dialog_header_red" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
-            <com.google.android.material.textview.MaterialTextView android:textSize="12.0sp" android:textColor="@color/white_87_percent" android:textColorLink="@color/white_87_percent" android:id="@id/bad_ip_list_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:text="@string/bad_ip_list_connect_dialog" android:layout_weight="1.0" android:lineSpacingExtra="1.0dip" />
-            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/bad_ip_list_close" android:background="@drawable/ripple" android:focusable="true" android:clickable="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="8.0dip" android:scaleType="centerInside" android:tint="@color/white" app:layout_constraintBottom_toBottomOf="@id/issuesLabel" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/issuesLabel" app:layout_constraintTop_toTopOf="@id/issuesLabel" app:srcCompat="@drawable/ic_clear_black_24dp" />
+
+    <LinearLayout
+        android:id="@id/bad_ip_list_connect_dialog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dialog_header_red"
+        android:orientation="vertical"
+        android:paddingTop="8.0dip"
+        android:paddingBottom="8.0dip"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@id/bad_ip_list_text"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24.0dip"
+                android:layout_marginRight="24.0dip"
+                android:layout_weight="1.0"
+                android:lineSpacingExtra="1.0dip"
+                android:text="@string/bad_ip_list_connect_dialog"
+                android:textColor="@color/white_87_percent"
+                android:textColorLink="@color/white_87_percent"
+                android:textSize="12.0sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@id/bad_ip_list_close"
+                android:layout_width="48.0dip"
+                android:layout_height="48.0dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8.0dip"
+                android:background="@drawable/ripple"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="centerInside"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/issuesLabel"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/issuesLabel"
+                app:layout_constraintTop_toTopOf="@id/issuesLabel"
+                app:srcCompat="@drawable/ic_clear_black_24dp" />
         </androidx.appcompat.widget.LinearLayoutCompat>
     </LinearLayout>
-    <androidx.recyclerview.widget.RecyclerView android:textSize="14.0sp" android:id="@id/connect_dialog_device_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
-    <View android:id="@id/bottom_line" android:background="@color/grey_200" android:layout_width="fill_parent" android:layout_height="1.0dip" />
-    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/card_backgrounds_on_window_background" android:layout_width="fill_parent" android:layout_height="52.0dip">
-        <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:id="@id/scanning_progress" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="24.0dip" android:tint="@color/color_accent" android:indeterminate="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:mpb_progressStyle="circular" style="@style/Widget.MaterialProgressBar.ProgressBar" />
-        <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/primary_text" android:id="@id/scanning_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/scanning_for_devices_label" android:maxLines="1" android:alpha="0.54" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/scanning_progress" app:layout_constraintRight_toLeftOf="@id/close_button" app:layout_constraintTop_toTopOf="parent" />
-        <androidx.appcompat.widget.AppCompatButton android:textSize="14.0sp" android:textColor="@color/wvc_blue" android:gravity="center" android:id="@id/rescan_button" android:background="@drawable/ripple_rect" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/refresh_device_list" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
-        <androidx.appcompat.widget.AppCompatButton android:textSize="14.0sp" android:textColor="@color/wvc_blue" android:gravity="center" android:id="@id/close_button" android:background="@drawable/ripple_rect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/close_dialog_button" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/connect_dialog_device_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:textSize="14.0sp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <View
+        android:id="@id/bottom_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/grey_200" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="52.0dip"
+        android:background="@color/card_backgrounds_on_window_background">
+
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+            android:id="@id/scanning_progress"
+            style="@style/Widget.MaterialProgressBar.ProgressBar"
+            android:layout_width="14.0dip"
+            android:layout_height="14.0dip"
+            android:layout_marginLeft="24.0dip"
+            android:indeterminate="true"
+            android:tint="@color/color_accent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:mpb_progressStyle="circular" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@id/scanning_label"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:alpha="0.54"
+            android:maxLines="1"
+            android:text="@string/scanning_for_devices_label"
+            android:textColor="@color/primary_text"
+            android:textSize="14.0sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/scanning_progress"
+            app:layout_constraintRight_toLeftOf="@id/close_button"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@id/rescan_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:background="@drawable/ripple_rect"
+            android:gravity="center"
+            android:text="@string/refresh_device_list"
+            android:textColor="@color/wvc_blue"
+            android:textSize="14.0sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@id/close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8.0dip"
+            android:background="@drawable/ripple_rect"
+            android:gravity="center"
+            android:text="@string/close_dialog_button"
+            android:textColor="@color/wvc_blue"
+            android:textSize="14.0sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

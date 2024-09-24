@@ -1,7 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/linearLayout2" android:background="@color/default_dialog_background" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="72.0dip" android:foreground="@drawable/ripple_rect"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.appcompat.widget.AppCompatImageView android:id="@id/device_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:scaleType="center" android:tint="@color/primary_text" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toLeftOf="@id/device_name" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" app:srcCompat="@drawable/ic_cast_black_32dp" />
-    <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/primary_text" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/device_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:maxLines="1" android:lineSpacingExtra="2.0dip" app:layout_constraintBottom_toTopOf="@id/device_type" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintLeft_toRightOf="@id/device_icon" app:layout_constraintStart_toEndOf="@id/device_icon" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" />
-    <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/secondary_text" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/device_type" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="1" android:lineSpacingExtra="1.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintLeft_toRightOf="@id/device_icon" app:layout_constraintStart_toStartOf="@id/device_name" app:layout_constraintTop_toBottomOf="@id/device_name" />
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/linearLayout2"
+    android:layout_width="fill_parent"
+    android:layout_height="72.0dip"
+    android:layout_gravity="center_vertical"
+    android:background="@color/default_dialog_background"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="@drawable/ripple_rect"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="24.0dip"
+    android:paddingRight="24.0dip">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@id/device_icon"
+        android:layout_width="32.0dip"
+        android:layout_height="32.0dip"
+        android:scaleType="center"
+        android:tint="@color/primary_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/device_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/my_icon_cast_black_32dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@id/device_name"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6.0dip"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="2.0dip"
+        android:maxLines="1"
+        android:textColor="@color/primary_text"
+        android:textSize="16.0sp"
+        app:layout_constraintBottom_toTopOf="@id/device_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/device_icon"
+        app:layout_constraintStart_toEndOf="@id/device_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@id/device_type"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="1.0dip"
+        android:maxLines="1"
+        android:textColor="@color/secondary_text"
+        android:textSize="14.0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/device_icon"
+        app:layout_constraintStart_toStartOf="@id/device_name"
+        app:layout_constraintTop_toBottomOf="@id/device_name" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1809,7 +1809,7 @@ Chúng tôi sẽ chia sẻ nhiều hơn khi bạn kết nối mạng trở lại
     <string name="webview_media_integrity_api_status_disabled">Đã vô hiệu</string>
     <string name="webview_media_integrity_api_status_enabled">Đã bật</string>
     <string name="webview_media_integrity_api_status_enabled_without_app_identity">Đã bật mà không có danh tính ứng dụng</string>
-    <string name="welcome_to_message_start_screen">Xin chào Huy97, tôi là %1$s</string>
+    <string name="welcome_to_message_start_screen">Xin chào bạn Huy97, tôi là %1$s</string>
     <string name="what_is_premium_dialog_button">Premium là gì?</string>
     <string name="what_is_premium_dialog_future_features_message">Chúng tôi luôn bổ sung các tính năng mới và các tính năng đó sẽ tự động mở khóa đối với người dùng gói premium khi chúng sẵn sàng.</string>
     <string name="what_is_premium_dialog_thank_you_message">Cảm ơn bạn đã sử dụng ứng dụng của chúng tôi</string>

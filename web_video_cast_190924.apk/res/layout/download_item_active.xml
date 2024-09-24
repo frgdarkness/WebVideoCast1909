@@ -1,16 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/downloads_item_left_margin"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:orientation="horizontal" android:id="@id/downloads_item_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/more_button_layout" android:layout_alignParentLeft="true">
-        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/videoPoster" android:layout_width="@dimen/downloads_poster_size" android:layout_height="@dimen/downloads_poster_size" android:layout_marginTop="@dimen/downloads_poster_margin" android:layout_marginBottom="@dimen/downloads_poster_margin" android:scaleType="centerCrop" app:srcCompat="@drawable/video_placeholder" />
-        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="@dimen/downloads_poster_margin" android:layout_marginBottom="@dimen/downloads_poster_margin" android:layout_weight="1.0">
-            <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/primary_text" android:id="@id/filename" android:layout_width="wrap_content" android:layout_height="24.0dip" android:maxLines="1" android:singleLine="true" android:alpha="0.87" />
-            <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:id="@id/download_progress_bar" android:background="@color/black_24_percent" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:tint="@color/color_accent" android:indeterminate="false" android:layout_alignParentBottom="true" app:mpb_progressStyle="horizontal" app:mpb_showTrack="false" app:mpb_useIntrinsicPadding="false" style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal.NoPadding" />
-            <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/primary_text" android:id="@id/download_progress_text" android:layout_width="wrap_content" android:layout_height="24.0dip" android:singleLine="true" android:alpha="0.87" />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/downloads_item_left_margin"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@id/downloads_item_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/more_button_layout"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@id/videoPoster"
+            android:layout_width="@dimen/downloads_poster_size"
+            android:layout_height="@dimen/downloads_poster_size"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/downloads_poster_margin"
+            android:layout_marginBottom="@dimen/downloads_poster_margin"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/video_placeholder" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginTop="@dimen/downloads_poster_margin"
+            android:layout_marginBottom="@dimen/downloads_poster_margin"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@id/filename"
+                android:layout_width="wrap_content"
+                android:layout_height="24.0dip"
+                android:alpha="0.87"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/primary_text"
+                android:textSize="16.0sp" />
+
+            <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+                android:id="@id/download_progress_bar"
+                style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal.NoPadding"
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="8.0dip"
+                android:layout_marginBottom="8.0dip"
+                android:background="@color/black_24_percent"
+                android:indeterminate="false"
+                android:tint="@color/color_accent"
+                app:mpb_progressStyle="horizontal"
+                app:mpb_showTrack="false"
+                app:mpb_useIntrinsicPadding="false" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@id/download_progress_text"
+                android:layout_width="wrap_content"
+                android:layout_height="24.0dip"
+                android:alpha="0.87"
+                android:singleLine="true"
+                android:textColor="@color/primary_text"
+                android:textSize="12.0sp" />
         </LinearLayout>
     </LinearLayout>
-    <LinearLayout android:orientation="horizontal" android:id="@id/more_button_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
-        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/download_pause" android:background="@drawable/ripple" android:focusable="true" android:clickable="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:scaleType="center" android:tint="@color/primary_text" android:alpha="0.87" app:srcCompat="@drawable/ic_pause_black_24dp_vector" />
-        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/download_remove" android:background="@drawable/ripple" android:focusable="true" android:clickable="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:scaleType="center" android:tint="@color/primary_text" android:alpha="0.87" app:srcCompat="@drawable/ic_close_black_24dp" />
+
+    <LinearLayout
+        android:id="@id/more_button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="4.0dip"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@id/download_pause"
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:layout_gravity="center_vertical"
+            android:alpha="0.87"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="center"
+            android:tint="@color/primary_text"
+            app:srcCompat="@drawable/ic_pause_black_24dp_vector" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@id/download_remove"
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:layout_gravity="center_vertical"
+            android:alpha="0.87"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="center"
+            android:tint="@color/primary_text"
+            app:srcCompat="@drawable/ic_close_black_24dp" />
     </LinearLayout>
 </RelativeLayout>

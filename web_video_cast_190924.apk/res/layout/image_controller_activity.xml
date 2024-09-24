@@ -1,26 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/black" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:id="@id/background_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:layout_constraintBottom_toTopOf="@id/ad_and_buy" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    <View android:id="@id/controls_background" android:background="@color/black_54_percent" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="@id/ad_and_buy" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/image_title" />
-    <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/white_87_percent" android:gravity="center" android:id="@id/image_title" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginBottom="8.0dip" android:maxLines="1" android:fontFamily="@string/font_family_medium" android:textAlignment="center" app:layout_constraintBottom_toTopOf="@id/slideshowDialogButton" app:layout_constraintLeft_toLeftOf="@id/controls_background" app:layout_constraintRight_toRightOf="@id/controls_background" />
-    <androidx.appcompat.widget.AppCompatButton android:textColor="@color/white" android:id="@id/slideshowDialogButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/slideshow_delay_title" app:layout_constraintBottom_toTopOf="@id/rotate_ccw" app:layout_constraintLeft_toLeftOf="@id/controls_background" app:layout_constraintRight_toRightOf="@id/controls_background" />
-    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/center_of_row" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintGuide_percent="0.5" app:layout_constraintLeft_toLeftOf="@id/controls_background" app:layout_constraintRight_toRightOf="@id/controls_background" />
-    <androidx.appcompat.widget.AppCompatImageView android:id="@id/zoom_out" android:contentDescription="@string/button_label_zoom_out" app:layout_constraintBottom_toTopOf="@id/ad_and_buy" app:layout_constraintRight_toLeftOf="@id/center_of_row" app:srcCompat="@drawable/ic_zoom_out_black_24dp" style="@style/image_control_buttons" />
-    <androidx.appcompat.widget.AppCompatImageView android:id="@id/previous" android:contentDescription="@string/button_label_previous" app:layout_constraintBottom_toTopOf="@id/ad_and_buy" app:layout_constraintRight_toLeftOf="@id/zoom_out" app:srcCompat="@drawable/ic_keyboard_arrow_left_black_24dp" style="@style/image_control_buttons" />
-    <androidx.appcompat.widget.AppCompatImageView android:id="@id/rotate_ccw" android:contentDescription="@string/button_label_rotate_ccw" app:layout_constraintBottom_toTopOf="@id/ad_and_buy" app:layout_constraintRight_toLeftOf="@id/previous" app:srcCompat="@drawable/ic_rotate_90_degrees_ccw_black_24dp" style="@style/image_control_buttons" />
-    <androidx.appcompat.widget.AppCompatImageView android:id="@id/zoom_in" android:contentDescription="@string/button_label_zoom_in" app:layout_constraintBottom_toTopOf="@id/ad_and_buy" app:layout_constraintLeft_toRightOf="@id/center_of_row" app:srcCompat="@drawable/ic_zoom_in_black_24dp" style="@style/image_control_buttons" />
-    <androidx.appcompat.widget.AppCompatImageView android:id="@id/next" android:contentDescription="@string/button_label_next" app:layout_constraintBottom_toTopOf="@id/ad_and_buy" app:layout_constraintLeft_toRightOf="@id/zoom_in" app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" style="@style/image_control_buttons" />
-    <androidx.appcompat.widget.AppCompatImageView android:id="@id/rotate_cw" android:contentDescription="@string/button_label_rotate_cw" android:scaleX="-1.0" app:layout_constraintBottom_toTopOf="@id/ad_and_buy" app:layout_constraintLeft_toRightOf="@id/next" app:srcCompat="@drawable/ic_rotate_90_degrees_ccw_black_24dp" style="@style/image_control_buttons" />
-    <LinearLayout android:orientation="vertical" android:id="@id/ad_and_buy" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent">
-        <androidx.appcompat.widget.AppCompatTextView android:id="@id/remove_ads_button" android:layout_marginTop="8.0dip" android:layout_marginBottom="16.0dip" android:text="@string/remove_ads_button_label" style="@style/buy_button" />
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@id/background_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@id/ad_and_buy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@id/controls_background"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:background="@color/black_54_percent"
+        app:layout_constraintBottom_toBottomOf="@id/ad_and_buy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/image_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@id/image_title"
+        android:layout_width="wrap_content"
+        android:layout_height="48.0dip"
+        android:layout_marginBottom="8.0dip"
+        android:fontFamily="@string/font_family_medium"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textColor="@color/white_87_percent"
+        android:textSize="16.0sp"
+        app:layout_constraintBottom_toTopOf="@id/slideshowDialogButton"
+        app:layout_constraintLeft_toLeftOf="@id/controls_background"
+        app:layout_constraintRight_toRightOf="@id/controls_background" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@id/slideshowDialogButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8.0dip"
+        android:text="@string/slideshow_delay_title"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/rotate_ccw"
+        app:layout_constraintLeft_toLeftOf="@id/controls_background"
+        app:layout_constraintRight_toRightOf="@id/controls_background" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@id/center_of_row"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintLeft_toLeftOf="@id/controls_background"
+        app:layout_constraintRight_toRightOf="@id/controls_background" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@id/zoom_out"
+        style="@style/image_control_buttons"
+        android:contentDescription="@string/button_label_zoom_out"
+        app:layout_constraintBottom_toTopOf="@id/ad_and_buy"
+        app:layout_constraintRight_toLeftOf="@id/center_of_row"
+        app:srcCompat="@drawable/ic_zoom_out_black_24dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@id/previous"
+        style="@style/image_control_buttons"
+        android:contentDescription="@string/button_label_previous"
+        app:layout_constraintBottom_toTopOf="@id/ad_and_buy"
+        app:layout_constraintRight_toLeftOf="@id/zoom_out"
+        app:srcCompat="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@id/rotate_ccw"
+        style="@style/image_control_buttons"
+        android:contentDescription="@string/button_label_rotate_ccw"
+        app:layout_constraintBottom_toTopOf="@id/ad_and_buy"
+        app:layout_constraintRight_toLeftOf="@id/previous"
+        app:srcCompat="@drawable/ic_rotate_90_degrees_ccw_black_24dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@id/zoom_in"
+        style="@style/image_control_buttons"
+        android:contentDescription="@string/button_label_zoom_in"
+        app:layout_constraintBottom_toTopOf="@id/ad_and_buy"
+        app:layout_constraintLeft_toRightOf="@id/center_of_row"
+        app:srcCompat="@drawable/ic_zoom_in_black_24dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@id/next"
+        style="@style/image_control_buttons"
+        android:contentDescription="@string/button_label_next"
+        app:layout_constraintBottom_toTopOf="@id/ad_and_buy"
+        app:layout_constraintLeft_toRightOf="@id/zoom_in"
+        app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@id/rotate_cw"
+        style="@style/image_control_buttons"
+        android:contentDescription="@string/button_label_rotate_cw"
+        android:scaleX="-1.0"
+        app:layout_constraintBottom_toTopOf="@id/ad_and_buy"
+        app:layout_constraintLeft_toRightOf="@id/next"
+        app:srcCompat="@drawable/ic_rotate_90_degrees_ccw_black_24dp" />
+
+    <LinearLayout
+        android:id="@id/ad_and_buy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        android:background="@color/black"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@id/remove_ads_button"
+            style="@style/buy_button"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginBottom="16.0dip"
+            android:text="@string/remove_ads_button_label" />
     </LinearLayout>
-    <View android:background="@color/black_54_percent" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="@id/toolbar" app:layout_constraintLeft_toLeftOf="@id/toolbar" app:layout_constraintRight_toRightOf="@id/toolbar" app:layout_constraintTop_toTopOf="@id/toolbar" />
-    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@null" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:minHeight="?actionBarSize" android:backgroundTint="@null" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:popupTheme="@style/CastAppTheme.PopupOverlay">
-        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
-            <androidx.appcompat.widget.AppCompatImageView android:id="@id/resize_to_max" android:contentDescription="@string/button_label_resize_to_max" app:layout_constraintRight_toLeftOf="@id/help" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_aspect_ratio_24dp" style="@style/toolbar_icons" />
-            <androidx.appcompat.widget.AppCompatImageView android:id="@id/help" android:contentDescription="@string/button_label_help" app:layout_constraintRight_toLeftOf="@id/castIcon" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_help_outline_black_24dp" style="@style/toolbar_icons" />
-            <com.instantbits.android.utils.widgets.CheckableImageButton android:id="@id/castIcon" android:contentDescription="@string/button_label_cast" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/cast_icon" style="@style/toolbar_icons" />
+
+    <View
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:background="@color/black_54_percent"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        app:layout_constraintLeft_toLeftOf="@id/toolbar"
+        app:layout_constraintRight_toRightOf="@id/toolbar"
+        app:layout_constraintTop_toTopOf="@id/toolbar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@null"
+        android:backgroundTint="@null"
+        android:minHeight="?actionBarSize"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/CastAppTheme.PopupOverlay">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@id/resize_to_max"
+                style="@style/toolbar_icons"
+                android:contentDescription="@string/button_label_resize_to_max"
+                app:layout_constraintRight_toLeftOf="@id/help"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_aspect_ratio_24dp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@id/help"
+                style="@style/toolbar_icons"
+                android:contentDescription="@string/button_label_help"
+                app:layout_constraintRight_toLeftOf="@id/castIcon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_help_outline_black_24dp" />
+
+            <com.instantbits.android.utils.widgets.CheckableImageButton
+                android:id="@id/castIcon"
+                style="@style/toolbar_icons"
+                android:contentDescription="@string/button_label_cast"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/cast_icon" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.appcompat.widget.Toolbar>
 </androidx.constraintlayout.widget.ConstraintLayout>

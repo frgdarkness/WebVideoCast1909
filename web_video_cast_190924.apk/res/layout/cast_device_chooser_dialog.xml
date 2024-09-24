@@ -1,16 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textAppearance="@style/TextAppearance.CastMediaRouteChooserDialog.Title" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/cast_device_chooser_title" android:paddingLeft="24.0dip" android:paddingTop="12.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.0dip" android:text="@string/cast_device_chooser_title" android:singleLine="true" />
-    <ListView android:id="@id/cast_device_chooser_list" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" />
-    <LinearLayout android:orientation="vertical" android:id="@android:id/empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="240.0dip">
-        <LinearLayout android:orientation="vertical" android:id="@id/cast_device_chooser_searching" android:paddingLeft="16.0dip" android:paddingTop="90.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
-            <TextView android:textAppearance="@style/TextAppearance.CastMediaRouteChooserDialog.SecondaryText" android:layout_gravity="center" android:id="@id/cast_device_chooser_search_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cast_device_chooser_searching_for_devices" />
-            <ProgressBar android:layout_gravity="center" android:id="@id/cast_device_chooser_progress_bar" android:layout_width="150.0dip" android:layout_height="wrap_content" android:indeterminate="true" style="?android:progressBarStyleHorizontal" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@id/cast_device_chooser_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:minHeight="52.0dip"
+        android:paddingLeft="24.0dip"
+        android:paddingTop="12.0dip"
+        android:paddingRight="24.0dip"
+        android:singleLine="true"
+        android:text="@string/cast_device_chooser_title"
+        android:textAppearance="@style/TextAppearance.CastMediaRouteChooserDialog.Title" />
+
+    <ListView
+        android:id="@id/cast_device_chooser_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0dip"
+        android:paddingBottom="24.0dip" />
+
+    <LinearLayout
+        android:id="@android:id/empty"
+        android:layout_width="fill_parent"
+        android:layout_height="240.0dip"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@id/cast_device_chooser_searching"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16.0dip"
+            android:paddingTop="90.0dip"
+            android:paddingRight="16.0dip">
+
+            <TextView
+                android:id="@id/cast_device_chooser_search_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/cast_device_chooser_searching_for_devices"
+                android:textAppearance="@style/TextAppearance.CastMediaRouteChooserDialog.SecondaryText" />
+
+            <ProgressBar
+                android:id="@id/cast_device_chooser_progress_bar"
+                style="?android:progressBarStyleHorizontal"
+                android:layout_width="150.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true" />
         </LinearLayout>
-        <LinearLayout android:orientation="vertical" android:id="@id/cast_device_chooser_zero_devices" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
-            <TextView android:textAppearance="@style/TextAppearance.CastMediaRouteChooserDialog.SecondaryText" android:id="@id/cast_device_chooser_zero_devices_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cast_zero_devices_found" />
-            <TextView android:textAppearance="@style/TextAppearance.CastMediaRouteChooserDialog.SecondaryText" android:id="@id/cast_device_chooser_learn_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cast_zero_devices_learn_more_description" />
+
+        <LinearLayout
+            android:id="@id/cast_device_chooser_zero_devices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="24.0dip"
+            android:paddingRight="24.0dip"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@id/cast_device_chooser_zero_devices_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cast_zero_devices_found"
+                android:textAppearance="@style/TextAppearance.CastMediaRouteChooserDialog.SecondaryText" />
+
+            <TextView
+                android:id="@id/cast_device_chooser_learn_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cast_zero_devices_learn_more_description"
+                android:textAppearance="@style/TextAppearance.CastMediaRouteChooserDialog.SecondaryText" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

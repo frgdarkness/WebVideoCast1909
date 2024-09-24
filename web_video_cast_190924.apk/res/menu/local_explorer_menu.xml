@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:icon="@drawable/ic_playlist_play_black_24dp" android:id="@id/add_all_to_playlist_menu_item" android:title="@string/add_all_to_playlist" app:iconTint="@color/secondary_text" />
+    <item android:icon="@drawable/my_icon_play_list" android:id="@id/add_all_to_playlist_menu_item" android:title="@string/add_all_to_playlist" app:iconTint="@color/secondary_text" />
     <item android:icon="@drawable/ic_saf_turn_on" android:id="@id/saf_toggle" android:title="@string/saf_toggle_on" app:iconTint="@color/secondary_text" />
 </menu>
